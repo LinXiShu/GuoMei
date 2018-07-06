@@ -1,0 +1,2 @@
+1.npm install mongodb --save
+2.在js里引入mongo.js直接使用，参考例子：lizi.js

@@ -1,0 +1,47 @@
+var MongoClient = require('mongodb').MongoClient;
+//结尾是选择数据库名
+var DB_CONN_STR = 'mongodb://localhost:27017';
+// 复制以下部分操作数据库，db.collection('集合名')连接到对应gome库下的表，在里面增加数据库操作代码
+MongoClient.connect(DB_CONN_STR, function(err, client) {
+    console.log("连接成功！");
+    const db = client.db('gome');
+    
+    let collection = db.collection("goods");
+
+    //例子：增
+	// collection.insert({
+	// 	name:"老谢",
+	// 	age:18
+    // })
+    
+    //删 单个
+    /* collection.remove({
+	 	name: "老谢",
+	    }, {
+	 	$set: {
+			age: 888
+	 	}
+    })*/
+
+    //改
+	/* collection.update({
+	 	name: "老谢",
+	    }, {
+	 	$set: {
+			age: 888
+	 	},{
+            multi: true
+         }
+    })*/
+    
+    //查
+	/*collection.find().toArray(function(err, result) {
+		if(err) {
+			console.log('Error:' + err);
+			return;
+		}
+		console.log(result);
+    });*/
+    
+    collection.close();
+})
