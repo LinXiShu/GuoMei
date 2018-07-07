@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import $ from 'jquery';
 
-import './home.css'
+import './home.css';
 
 class Home extends Component {
 	constructor(props) {
@@ -15,10 +16,14 @@ class Home extends Component {
     
     // 函数表达式
 	/*toggle(){
-		this.setState({
-			bool:!this.state.bool
+		$.ajax({
+			url:'http://localhost:13838/goods',
+			data:{
+				name:'sfs',
+				age:124
+			}
 		})
-    }*/
+    };*/
     
 
 	render() {
@@ -26,6 +31,7 @@ class Home extends Component {
             // 这里写html结构
 			<div>
 				<p>这是首页</p>
+				{/* <p onClick={this.toggle.bind(this)}>这是首页</p> */}
 			</div>
 		);
 	}

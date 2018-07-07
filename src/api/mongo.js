@@ -10,6 +10,7 @@ function collection(m,n,callback) {
 		//console.log(db);
 		let collection = db.collection(n);
 		callback(collection);
+		if (err) throw err;
 		client.close();
 	});
 }
