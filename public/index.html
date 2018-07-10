@@ -20,18 +20,27 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1.0, minimum-scale=1" id="vp"/>
-    <!-- 手机默认设备像素比devicePixelRatio。iphone5 2-->
-   <script type="text/javascript">
-        // 把尺寸放大N倍（N是window.devicePixelRatio）
-        var wd = document.documentElement.clientWidth*window.devicePixelRatio/10;
-        //物理像素*设备像素比=真实像素
-        document.getElementsByTagName("html")[0].style.fontSize = wd + "px";
-        // 把屏幕的倍率缩小到N分之一（N是window.devicePixelRatio）
-        var scale = 1/window.devicePixelRatio;
-        var mstr = 'initial-scale='+ scale +', maximum-scale='+ scale +', minimum-scale='+ scale +', user-scalable=no';
-        document.getElementById("vp").content = mstr;
-    </script>
+    <!-- <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=0.5, minimum-scale=0.5, user-scalable=no,viewport-fit=cover">
+    <script>
+      (function(){document.documentElement.getAttribute("data-dpr");
+        var a=100/750*document.documentElement.offsetWidth;
+        document.querySelector("html").style.fontSize=a+"px";
+        window.addEventListener("resize",function(){var a=100/750*document.querySelector("html").offsetWidth;
+          document.querySelector("html").style.fontSize=a+"px"
+        })
+      })();
+    </script> -->
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1" id="vp">
+    <script type="text/javascript">
+			// 把尺寸放大N倍（N是window.devicePixelRatio）
+			var wd = document.documentElement.clientWidth * window.devicePixelRatio / 10;
+			//物理像素*设备像素比=真实像素
+			document.getElementsByTagName("html")[0].style.fontSize = wd + "px";
+			// 把屏幕的倍率缩小到N分之一（N是window.devicePixelRatio）
+			var scale = 1 / window.devicePixelRatio;
+			var mstr = 'initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no';
+			document.getElementById("vp").content = mstr;
+		</script>
   </head>
   <body>
     <noscript>

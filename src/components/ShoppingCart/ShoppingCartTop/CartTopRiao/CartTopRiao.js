@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import $ from 'jquery';
+// import $ from 'jquery';
 
-import './home.css';
+import './CartTopRiao.css';
 
-class Home extends Component {
+class CartTopRiao extends Component {
 	constructor(props) {
 		super(props);
 		//类实例化，执行
@@ -29,9 +29,14 @@ class Home extends Component {
 	render() {
 		return (
             // 这里写html结构
-			<div>
-				<p>这是首页</p>
-				{/* <p onClick={this.toggle.bind(this)}>这是首页</p> */}
+			<div className="CartTopRiao" style={{display:this.props.istoggle?'block':'none'}}>
+				<p className="Riao_icn"></p>
+				<div>
+					<a className="Riao_list Riao_list1"><i></i><p>首页</p></a>
+					<a className="Riao_list Riao_list2"><i></i><p>分类</p></a>
+					<a href="/ShoppingCart" className="Riao_list Riao_list3"><i></i><p>购物车</p></a>
+					<a className="Riao_list Riao_list4"><i></i><p>我的</p></a>
+				</div>
 			</div>
 		);
 	}
@@ -47,8 +52,8 @@ export default connect((state) => {
 			//可以触发多个
 			dispatch({
                 type: 'isShow',
-                isShow: true
+                isShow: false
 			})
 		}
 	}
-})(Home);
+})(CartTopRiao);

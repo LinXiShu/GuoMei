@@ -40,4 +40,19 @@ app.use(bodyParser.json());
     })
 });*/
 
+app.get('/buycar',(req, res) =>{
+    mongo.collection('gome','buycar', function(collection) {
+        // console.log('链接成功');
+        collection.find().toArray(function(err, result) {
+            if(err) {
+                console.log('Error:' + err);
+                return;
+            }
+            if(result){
+                res.send(result)
+            }
+        })
+    })
+});
+
 app.listen(13838);

@@ -8,21 +8,25 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import './static/css/base.css';
 import registerServiceWorker from './registerServiceWorker';
 
-import Xhome from './pages/home/home';
+import ShoppingCart from './pages/ShoppingCart/ShoppingCart';
 
 const store = createStore((state = {
     // 状态名：状态值
-    isShow: false,
+    istoggle: '',
 	count: 0
 }, action) => {
 	// const count = state.count
 	switch(action.type) {
         //触发动作
         // 触发传参的函数的type值，在页面函数表达式为：this.props.函数名.bind(this)
-		case 'isShow':
+		case 'istoggle':
 			return Object.assign({}, state, {
-				isShow: action.isShow,
+				istoggle: action.istoggle,
             });
+        case 'ishide':
+        return Object.assign({}, state, {
+            istoggle: action.istoggle,
+        });
 		default:
 			return state
 	}
@@ -33,7 +37,7 @@ ReactDOM.render(
         <Provider store={store}>
             <div>
                 {/* <Xhome /> */}
-                <Route exact path="/" component={Xhome}/>
+                <Route path="/ShoppingCart" component={ShoppingCart}/>
             </div>
         </Provider>
         </Router>, 
