@@ -55,12 +55,16 @@
     background: #f8f8f8;
 }
 
-.goodscar_T i{
+.goodscar_T i,.list_ipt i{
     display: block;
     width: 0.625rem;
     height: 0.625rem;
     border-radius: 50%;
-    background-color: #FC1E56;
+    border: 1px solid #ccc;
+}
+.goodscar_T .xuan{
+    background: url('../../../static/images/xuan.png') no-repeat center center;
+    background-size: 100%;
 }
 
 .goodscar_T span{
@@ -83,6 +87,11 @@
     width: 0.625rem;
     height: 0.625rem;
     margin:0 0.3125rem;
+}
+
+.list_ipt .xuan{
+    background: url('../../../static/images/xuan.png') no-repeat center center;
+    background-size: 100%;
 }
 
 .list_img img{

@@ -55,4 +55,31 @@ app.get('/buycar',(req, res) =>{
     })
 });
 
+app.get('/xuan',(req, res) =>{
+    mongo.collection('gome','buycar', function(collection) {
+        // console.log('链接成功');
+        // console.log(req.query.fg, "," ,req.query.id)
+        // console.log((req.query.id)*1)
+        collection.update(
+        {
+            // id:req.query.id
+            _id:req.query._id,
+            "goods.id":(req.query.id)*1,
+        },{
+            $set: {
+                // checksd:req.query.fg
+                "goods.$.checksd":req.query.fg
+            },
+            // 记录更新时间
+            // $currentDate: { lastModified: true }
+        },{
+            multi: true 
+        },(err, result) => {
+            if(result){
+                res.send(result)
+            }
+        })
+    })
+});
+
 app.listen(13838);

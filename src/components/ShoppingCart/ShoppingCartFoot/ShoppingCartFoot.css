@@ -1,0 +1,71 @@
+.ShoppingCartFoot{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    height: 1.421875rem;
+    background-color: #FFF;
+    border-top: 0.015625rem solid #CCC;
+}
+
+.ShoppingCartFoot_L{
+    display: flex;
+    width: 7.03125rem;
+}
+.ShoppingCartFoot_l{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.375rem;
+}
+
+.ShoppingCartFoot_l i{
+    display: block;
+    width: 0.625rem;
+    height: 0.625rem;
+    border: 1px solid #CCC;
+    border-radius: 50%;
+}
+
+.ShoppingCartFoot_l span{
+    display: block;
+    padding:0 0.234375rem;
+}
+
+.ShoppingCartFoot_C{
+   flex: 1;
+   text-align: right;
+   padding-right: 0.234375rem;
+}
+
+.ShoppingCartFoot_C div:nth-child(1){
+    line-height: 0.78125rem;
+    font-size: 28px;
+}
+
+.ShoppingCartFoot_C div:nth-child(1) span:nth-child(1){
+    color: #000;
+}
+
+.ShoppingCartFoot_C div:nth-child(1) span:nth-child(2){
+    color: #F20C59;
+}
+
+.ShoppingCartFoot_C div:nth-child(2){
+    line-height: 0.625rem;
+    font-size: 18px;
+}
+
+.ShoppingCartFoot_C div:nth-child(2) span:nth-child(2){
+    font-weight: bold;
+}
+
+.ShoppingCartFoot_R{
+    flex: 1;
+    text-align: center;
+    line-height: 1.40625rem;
+    font-size: 32px;
+    color: #FFF;
+    background-color: #F20C59;
+}

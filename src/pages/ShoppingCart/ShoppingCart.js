@@ -7,6 +7,8 @@ import './ShoppingCart.css';
 import ShoppingCartTop from '../../components/ShoppingCart/ShoppingCartTop/ShoppingCartTop';
 import ShoppingMain from '../../components/ShoppingCart/ShoppingMain/ShoppingMain';
 import GuesslikeModule from '../../components/ShoppingCart/guesslikeModule/GuesslikeModule';
+import ShoppingCartFoot from '../../components/ShoppingCart/ShoppingCartFoot/ShoppingCartFoot';
+
 
 
 class ShoppingCart extends Component {
@@ -38,6 +40,8 @@ class ShoppingCart extends Component {
 				<ShoppingCartTop/>
 				<ShoppingMain/>
 				<GuesslikeModule/>
+				<ShoppingCartFoot/>
+				<div className="xxb"></div>
 				{/* <p onClick={this.toggle.bind(this)}>这是首页</p> */}
 			</div>
 		);
