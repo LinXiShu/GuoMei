@@ -14,7 +14,7 @@ class ShoppingMain extends Component {
 			bool:false
 		}
     }
-	
+	// 加载时更新购物车
 	componentWillMount(){
 		// console.log(this.state.buycar)
 		$.ajax({
@@ -25,19 +25,20 @@ class ShoppingMain extends Component {
 				// console.log(data)
 				this.setState({buycar: data});
 				// console.log(this);
-				for(let i=0; i<this.state.buycar.length;i++){
-					for(let j=0;j<this.state.buycar[i].goods.length;j++){
-						let a = this.state.buycar[i].goods[j];
-						// console.log(a)
-						if(a.checksd === "xuan"){
-							$('i','.goodscar_T').addClass("xuan")
-						}
-					}
-				}
+				// for(let i=0; i<this.state.buycar.length;i++){
+				// 	for(let j=0;j<this.state.buycar[i].goods.length;j++){
+				// 		let a = this.state.buycar[i].goods[j];
+				// 		// console.log(a)
+				// 		if(a.checksd === "xuan"){
+				// 			$('i','.goodscar_T').addClass("xuan")
+				// 		}
+				// 	}
+				// }
+			this.props.kdkds.bind(this)('yytut')
 			}
 		});
 	}
-
+	// 商品选项框，更新页面数据和数据库数据
 	dfgd(e){
 		// let fg = $(e.target).attr('class');
 		let _id = $(e.target).parent().parent().parent().parent().attr('id');
@@ -90,7 +91,7 @@ class ShoppingMain extends Component {
 			}
 		})
 	}
-
+	// 编辑商品列表
 	hjk(e){
 		// console.log($(e.target).parent().parent())
 		// let e = $(e.target).parent().parent().attr("id");
@@ -98,7 +99,7 @@ class ShoppingMain extends Component {
 			bool:!this.state.bool,
 		})
 	}
-
+	// 商品数量减少
 	jjian(e){
 		let n = $(e.target).parent();
 		let m = $('input',$(n)).val();
@@ -111,14 +112,14 @@ class ShoppingMain extends Component {
 		// console.log($('input',$(n)).val())
 
 	}
-
+	// 商品数量增加
 	jjia(e){
 		let n = $(e.target).parent();
 		let m = $('input',$(n)).val();
 		m++;
 		$('input',$(n)).val(m)
 	}
-
+	删除单个商品
 	dit(e){
 		let _id = $(e.target).parent().parent().parent().attr('id');
 		let id = $(e.target).parent().parent().attr("id")
@@ -134,6 +135,9 @@ class ShoppingMain extends Component {
 						if((item.goods.length-1)<0){
 							// console.log(666)
 							this.state.buycar.splice(index,1)
+							$.ajax({
+								url:"http://localhost:13838/shan",
+							})
 						}
 						this.setState({
 							buycar:this.state.buycar
@@ -234,6 +238,12 @@ export default connect((state) => {
                 type: 'istoggle',
 				istoggle: true,
 			});
+		},
+		kdkds:(p)=>{
+			console.log(p);
+			dispatch({
+				type:'',
+			})
 		}
 	}
 })(ShoppingMain);

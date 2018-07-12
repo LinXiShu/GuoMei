@@ -82,4 +82,8 @@ app.get('/xuan',(req, res) =>{
     })
 });
 
+app.get('/shan',(req,res)=>{
+    mongo.collection('gome','buycar', function(collection) {}),(err,result)=>{res.send(result)}
+})
+
 app.listen(13838);
