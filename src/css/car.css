@@ -1,0 +1,17 @@
+
+.list_top{
+
+  border-bottom: 1px solid #ccc;
+    
+}
+
+.list_top .list_car{
+    
+    margin-left: 3.5rem;
+}
+.car_main{
+
+    width: 100%;
+    min-height: 10.0125rem;
+    background: #fff url('//app.gomein.net.cn/plus/images/shop_cart/bj_baobei.png?v=20180131')no-repeat 50% 30%;
+}

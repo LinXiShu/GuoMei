@@ -1,0 +1,28 @@
+/* 
+* @Author: Marte
+* @Date:   2018-07-04 15:13:05
+* @Last Modified by:   Marte
+* @Last Modified time: 2018-07-06 09:31:02
+*/
+
+
+.lxs{
+
+    font-weight: bold;
+    
+}
+
+.footer{
+  
+    position: fixed;
+    bottom: 0;
+    width: 375px;
+    line-height: 50px;
+    border-top: 1px solid #ccc;
+
+}
+.footer span{
+
+    margin-left: 35px;
+    font-size: 14px;
+}

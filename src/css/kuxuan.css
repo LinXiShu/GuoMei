@@ -1,0 +1,201 @@
+
+.jinxuanye{
+    background: #182f41;
+    color: #fff;
+}
+
+.list_top{
+
+    width: 100%;height: 1.1875rem;
+    font-size: 0.66875rem;
+    line-height: 1.18rem;
+    background: #fff;
+    overflow: hidden;
+    color: black;
+}
+
+.list_zuo i{
+    margin-left: 0.10625rem;
+    font-size: 0.8rem;
+}
+.list_zuo{
+    display: block;
+    float: left;
+}
+.list_cont{
+    display: block;
+    float: left;
+    font-size: 0.46875rem;
+    margin-left: 0.99375rem;
+}
+.list_right{
+
+    display: block;
+    float: right;
+}
+
+.list_right i{
+    margin-right: 0.20625rem;
+    font-size: 0.7rem;
+}
+
+
+
+.fenlei{
+    
+    overflow-y: hidden;
+    width: 100%;
+}
+
+.No1{
+
+
+    height: 1.455rem;
+    overflow:hidden;
+}
+
+.No2{
+
+    height: 3.105rem;
+    overflow:hidden;
+}
+
+.No2 a{
+
+    display: block;
+    height: 3.105rem;
+    overflow:hidden;
+}
+
+.No3{
+
+    width: 50%;
+    height: 2.8825rem; 
+    float: left;
+    overflow: hidden;
+}
+.No3 a{
+    display: block;
+    width: 100%;
+    height: 2.8825rem; 
+}
+
+.No3_2{
+
+    width: 50%;
+    height: 2.8825rem;
+    float: left;
+    overflow: hidden;
+}
+
+.No3_2 a{
+    display: block;
+    width: 100%;
+    height: 2.8825rem; 
+}
+
+.xia_main{
+
+    height: 16.59rem;
+    overflow-x: hidden ;
+}
+
+.long_main{
+    
+    
+    height: 92rem;
+}
+
+.No4{
+
+    width: 100%;
+    height: 18.8125rem;
+    background: #fff;
+}
+
+.No5{
+    
+    width:;
+    height:;
+}
+
+.No6_1{
+
+    float: left;
+}
+.No6_1 {
+
+    width: 33.1%;
+    height: 3.7575rem;
+    
+}
+.No7_1{
+    
+    float: left;
+    width: 50%;
+}
+.No6{
+
+    overflow: hidden;
+}
+.No7{
+
+    overflow: hidden;
+}
+
+.No8{
+
+    width: 100%;
+    height: 5.9875rem;
+    background: #fff;
+}
+
+.No9{
+    
+    width: 50%;
+    float: left;
+}
+
+.No9 .No9_1{
+    
+    height: 2.925rem;
+}
+.No9 .No9_2{
+    
+    height: 2.925rem;
+}
+
+.No10{
+
+    width: 33%;
+    float: left;
+}
+
+.No11{}
+
+.No12{
+
+    width: 100%;
+    height: 16.8125rem;
+    background: #fff;
+}
+
+.No14{
+
+    width: 100%;
+    height: 16.8125rem;
+    background: #fff;
+}
+
+.No15{
+    
+    margin-top: 0.46875rem;
+    font-size: 0.425rem;
+}
+
+.footers{
+
+    color: #ccc;
+    font-size: 0.38125rem;
+    margin-top: 0.8375rem;
+}

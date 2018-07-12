@@ -1,14 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import './index.css';
+import './index.css';
+import './font/font_mbsvd8287jn/iconfont.css';
 // import App from './App';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import './static/css/base.css';
+import { BrowserRouter, Route, Router, Link, hashHistory,ReactRouter } from 'react-router-dom';
+
+
 import registerServiceWorker from './registerServiceWorker';
 
-import Xhome from './pages/home/home';
+import HelloIndex from './components/HelloIndex';
+import HelloList  from './components/HelloList';
+import HelloCar   from './components/HelloCar';
+import HelloMy    from './components/HelloMy';
+import HelloKuxuan from './components/HelloKuxuan';
+import HelloLogin from './components/HelloLogin';
 
 const store = createStore((state = {
     // 状态名：状态值
@@ -29,13 +36,17 @@ const store = createStore((state = {
 });
 
 ReactDOM.render(
-    <Router>
-        <Provider store={store}>
-            <div>
-                {/* <Xhome /> */}
-                <Route exact path="/" component={Xhome}/>
-            </div>
-        </Provider>
-        </Router>, 
-document.getElementById('root'));
+    <BrowserRouter history={BrowserRouter.hashHistory}>
+
+        <div>
+              <Route exact path="/"     component={HelloIndex} />
+              <Route       path="/list" component={HelloList} />
+              <Route       path="/car"  component={HelloCar} />
+              <Route       path="/my"   component={HelloMy} />
+              <Route       path="/kuxuan"   component={HelloKuxuan} />
+              <Route       path="/login" component={HelloLogin} />
+        </div>
+        
+    </BrowserRouter>
+        , document.getElementById('root'));
 registerServiceWorker();
