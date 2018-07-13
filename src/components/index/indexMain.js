@@ -14,6 +14,10 @@ import $ from 'jquery';
 
 import LazyLoad from 'react-lazy-load';
 
+import LazyLoads from 'react-lazyload';
+
+import IndexXiaLa from './indexXiaLa';
+
 let swopeOptions = {
     continuous: true, speed: 400,
     auto: 2000, 
@@ -286,19 +290,19 @@ class InndexMain extends React.Component{
                     <div className="jinxuana">
                        <ReactSwipe className="lunbotu1" swipeOptions={{continuous: true, speed: 400,disableScroll: false,showPagination: false}} >
                         <div >
-                        <div className="jianxuana_xia"><center><div className="img_xiaoxiao">  <LazyLoad offsetTop={500} className="" ><img src="//gfs17.gomein.net.cn/T12YWgBKdv1RCvBVdK_160.jpg" width="100%"/></LazyLoad></div><span className="spanss">荣耀10 AI摄影</span><br/><span className="￥">￥1099</span></center></div>
-                        <div className="jianxuana_xia"><center><div className="img_xiaoxiao">  <LazyLoad offsetTop={500} className="" ><img src="//gfs17.gomein.net.cn/T1uLEvB_D_1RCvBVdK_160.jpg" width="100%"/></LazyLoad></div><span className="spanss">双面玻璃 无线充电</span><br/><span className="￥">￥1299</span></center></div>
-                        <div className="jianxuana_xia"><center><div className="img_xiaoxiao">  <LazyLoad offsetTop={500} className="" ><img src="//gfs17.gomein.net.cn/T1wpA_BvxT1RCvBVdK_160.jpg" width="100%"/></LazyLoad></div><span className="spanss">全面屏 送话费</span><br/><span className="￥">￥2099</span></center></div>
+                        <div className="jianxuana_xia"><center><div className="img_xiaoxiao">  <LazyLoad offsetTop={500} className="" ><img src="//gfs17.gomein.net.cn/T12YWgBKdv1RCvBVdK_160.jpg" width="100%"/></LazyLoad></div><span className="spanssa">荣耀10 AI摄影</span><br/><span className="￥">￥1099</span></center></div>
+                        <div className="jianxuana_xia"><center><div className="img_xiaoxiao">  <LazyLoad offsetTop={500} className="" ><img src="//gfs17.gomein.net.cn/T1uLEvB_D_1RCvBVdK_160.jpg" width="100%"/></LazyLoad></div><span className="spanssa">双面玻璃 无线充电</span><br/><span className="￥">￥1299</span></center></div>
+                        <div className="jianxuana_xia"><center><div className="img_xiaoxiao">  <LazyLoad offsetTop={500} className="" ><img src="//gfs17.gomein.net.cn/T1wpA_BvxT1RCvBVdK_160.jpg" width="100%"/></LazyLoad></div><span className="spanssa">全面屏 送话费</span><br/><span className="￥">￥2099</span></center></div>
                        </div>
                             <div >
-                            <div className="jianxuana_xia"><center><div className="img_xiaoxiao">  <img src="//gfs17.gomein.net.cn/T1qhEvBQZT1RCvBVdK_160.jpg" width="100%"/></div><span className="spanss">面部ID 全面屏</span><br/><span className="￥">￥2999</span></center></div>
-                            <div className="jianxuana_xia"><center><div className="img_xiaoxiao">  <img src="//gfs17.gomein.net.cn/T1jvKjB4Lv1RCvBVdK_160.jpg" width="100%"/></div><span className="spanss">全面屏 柔光自拍</span><br/><span className="￥">￥5535</span></center></div>
-                            <div className="jianxuana_xia"><center><div className="img_xiaoxiao">  <img src="//gfs17.gomein.net.cn/T1FkJgBmVT1RCvBVdK_160.jpg" width="100%"/></div><span className="spanss">大容量 全面屏</span><br/><span className="￥">￥2099</span></center></div>
+                            <div className="jianxuana_xia"><center><div className="img_xiaoxiao">  <img src="//gfs17.gomein.net.cn/T1qhEvBQZT1RCvBVdK_160.jpg" width="100%"/></div><span className="spanssa">面部ID 全面屏</span><br/><span className="￥">￥2999</span></center></div>
+                            <div className="jianxuana_xia"><center><div className="img_xiaoxiao">  <img src="//gfs17.gomein.net.cn/T1jvKjB4Lv1RCvBVdK_160.jpg" width="100%"/></div><span className="spanssa">全面屏 柔光自拍</span><br/><span className="￥">￥5535</span></center></div>
+                            <div className="jianxuana_xia"><center><div className="img_xiaoxiao">  <img src="//gfs17.gomein.net.cn/T1FkJgBmVT1RCvBVdK_160.jpg" width="100%"/></div><span className="spanssa">大容量 全面屏</span><br/><span className="￥">￥2099</span></center></div>
                        </div>
                             <div >
-                            <div className="jianxuana_xia"><center><div className="img_xiaoxiao">  <img src="//gfs17.gomein.net.cn/T1qabbB7dT1RCvBVdK_160.jpg" width="100%"/></div><span className="spanss">大容量 全面屏</span><br/><span className="￥">￥2999</span></center></div>
-                            <div className="jianxuana_xia"><center><div className="img_xiaoxiao">  <img src="//gfs17.gomein.net.cn/T1NEhQBCxT1RCvBVdK_160.jpg" width="100%"/></div><span className="spanss">双面玻璃 无线充电</span><br/><span className="￥">￥1099</span></center></div>
-                            <div className="jianxuana_xia"><center><div className="img_xiaoxiao">  <img src="//gfs17.gomein.net.cn/T1FkJgBmVT1RCvBVdK_160.jpg" width="100%"/></div><span className="spanss">物美价廉 真实惠</span><br/><span className="￥">￥1300</span></center></div>
+                            <div className="jianxuana_xia"><center><div className="img_xiaoxiao">  <img src="//gfs17.gomein.net.cn/T1qabbB7dT1RCvBVdK_160.jpg" width="100%"/></div><span className="spanssa">大容量 全面屏</span><br/><span className="￥">￥2999</span></center></div>
+                            <div className="jianxuana_xia"><center><div className="img_xiaoxiao">  <img src="//gfs17.gomein.net.cn/T1NEhQBCxT1RCvBVdK_160.jpg" width="100%"/></div><span className="spanssa">双面玻璃 无线充电</span><br/><span className="￥">￥1099</span></center></div>
+                            <div className="jianxuana_xia"><center><div className="img_xiaoxiao">  <img src="//gfs17.gomein.net.cn/T1FkJgBmVT1RCvBVdK_160.jpg" width="100%"/></div><span className="spanssa">物美价廉 真实惠</span><br/><span className="￥">￥1300</span></center></div>
                        </div>
                        </ReactSwipe>
                     </div>
@@ -310,19 +314,19 @@ class InndexMain extends React.Component{
                     <div className="chihuo_xia">
                            <ReactSwipe className="lunbotu1" swipeOptions={{continuous: true, speed: 400,disableScroll: false,showPagination: false}} >
                         <div >
-                        <div className="jianxuana_xia"><center><div className="img_xiaoxiao">  <LazyLoad offsetTop={500} className="" ><img src="//gfs17.gomein.net.cn/T12YWgBKdv1RCvBVdK_160.jpg" width="100%"/></LazyLoad></div><span className="spanss">荣耀10 AI摄影</span><br/><span className="￥">￥1099</span></center></div>
-                        <div className="jianxuana_xia"><center><div className="img_xiaoxiao">  <LazyLoad offsetTop={500} className="" ><img src="//gfs17.gomein.net.cn/T1uLEvB_D_1RCvBVdK_160.jpg" width="100%"/></LazyLoad></div><span className="spanss">双面玻璃 无线充电</span><br/><span className="￥">￥1299</span></center></div>
-                        <div className="jianxuana_xia"><center><div className="img_xiaoxiao">  <LazyLoad offsetTop={500} className="" ><img src="//gfs17.gomein.net.cn/T1wpA_BvxT1RCvBVdK_160.jpg" width="100%"/></LazyLoad></div><span className="spanss">全面屏 送话费</span><br/><span className="￥">￥2099</span></center></div>
+                        <div className="jianxuana_xia"><center><div className="img_xiaoxiao">  <LazyLoad offsetTop={500} className="" ><img src="//gfs17.gomein.net.cn/T12YWgBKdv1RCvBVdK_160.jpg" width="100%"/></LazyLoad></div><span className="spanssa">荣耀10 AI摄影</span><br/><span className="￥">￥1099</span></center></div>
+                        <div className="jianxuana_xia"><center><div className="img_xiaoxiao">  <LazyLoad offsetTop={500} className="" ><img src="//gfs17.gomein.net.cn/T1uLEvB_D_1RCvBVdK_160.jpg" width="100%"/></LazyLoad></div><span className="spanssa">双面玻璃 无线充电</span><br/><span className="￥">￥1299</span></center></div>
+                        <div className="jianxuana_xia"><center><div className="img_xiaoxiao">  <LazyLoad offsetTop={500} className="" ><img src="//gfs17.gomein.net.cn/T1wpA_BvxT1RCvBVdK_160.jpg" width="100%"/></LazyLoad></div><span className="spanssa">全面屏 送话费</span><br/><span className="￥">￥2099</span></center></div>
                        </div>
                             <div >
-                            <div className="jianxuana_xia"><center><div className="img_xiaoxiao"><img src="//gfs17.gomein.net.cn/T1qhEvBQZT1RCvBVdK_160.jpg" width="100%"/></div><span className="spanss">面部ID 全面屏</span><br/><span className="￥">￥2999</span></center></div>
-                            <div className="jianxuana_xia"><center><div className="img_xiaoxiao"><img src="//gfs17.gomein.net.cn/T1jvKjB4Lv1RCvBVdK_160.jpg" width="100%"/></div><span className="spanss">全面屏 柔光自拍</span><br/><span className="￥">￥5535</span></center></div>
-                            <div className="jianxuana_xia"><center><div className="img_xiaoxiao"><img src="//gfs17.gomein.net.cn/T1FkJgBmVT1RCvBVdK_160.jpg" width="100%"/></div><span className="spanss">大容量 全面屏</span><br/><span className="￥">￥2099</span></center></div>
+                            <div className="jianxuana_xia"><center><div className="img_xiaoxiao"><img src="//gfs17.gomein.net.cn/T1qhEvBQZT1RCvBVdK_160.jpg" width="100%"/></div><span className="spanssa">面部ID 全面屏</span><br/><span className="￥">￥2999</span></center></div>
+                            <div className="jianxuana_xia"><center><div className="img_xiaoxiao"><img src="//gfs17.gomein.net.cn/T1jvKjB4Lv1RCvBVdK_160.jpg" width="100%"/></div><span className="spanssa">全面屏 柔光自拍</span><br/><span className="￥">￥5535</span></center></div>
+                            <div className="jianxuana_xia"><center><div className="img_xiaoxiao"><img src="//gfs17.gomein.net.cn/T1FkJgBmVT1RCvBVdK_160.jpg" width="100%"/></div><span className="spanssa">大容量 全面屏</span><br/><span className="￥">￥2099</span></center></div>
                        </div>
                             <div >
-                            <div className="jianxuana_xia"><center><div className="img_xiaoxiao"><img src="//gfs17.gomein.net.cn/T1qabbB7dT1RCvBVdK_160.jpg" width="100%"/></div><span className="spanss">大容量 全面屏</span><br/><span className="￥">￥2999</span></center></div>
-                            <div className="jianxuana_xia"><center><div className="img_xiaoxiao"><img src="//gfs17.gomein.net.cn/T1NEhQBCxT1RCvBVdK_160.jpg" width="100%"/></div><span className="spanss">双面玻璃 无线充电</span><br/><span className="￥">￥1099</span></center></div>
-                            <div className="jianxuana_xia"><center><div className="img_xiaoxiao"><img src="//gfs17.gomein.net.cn/T1FkJgBmVT1RCvBVdK_160.jpg" width="100%"/></div><span className="spanss">物美价廉 真实惠</span><br/><span className="￥">￥1300</span></center></div>
+                            <div className="jianxuana_xia"><center><div className="img_xiaoxiao"><img src="//gfs17.gomein.net.cn/T1qabbB7dT1RCvBVdK_160.jpg" width="100%"/></div><span className="spanssa">大容量 全面屏</span><br/><span className="￥">￥2999</span></center></div>
+                            <div className="jianxuana_xia"><center><div className="img_xiaoxiao"><img src="//gfs17.gomein.net.cn/T1NEhQBCxT1RCvBVdK_160.jpg" width="100%"/></div><span className="spanssa">双面玻璃 无线充电</span><br/><span className="￥">￥1099</span></center></div>
+                            <div className="jianxuana_xia"><center><div className="img_xiaoxiao"><img src="//gfs17.gomein.net.cn/T1FkJgBmVT1RCvBVdK_160.jpg" width="100%"/></div><span className="spanssa">物美价廉 真实惠</span><br/><span className="￥">￥1300</span></center></div>
                        </div>
                        </ReactSwipe>
                     </div>
@@ -334,19 +338,19 @@ class InndexMain extends React.Component{
                     <div className="jiebei_xia">
                     <ReactSwipe className="lunbotu1" swipeOptions={{continuous: true, speed: 400,disableScroll: false,showPagination: false}} >
                      <div >
-                     <div className="jianxuana_xia"><center><div className="img_xiaoxiao"><LazyLoad offsetTop={500} className="" ><img src="//gfs17.gomein.net.cn/T12YWgBKdv1RCvBVdK_160.jpg" width="100%"/></LazyLoad></div><span className="spanss">荣耀10 AI摄影</span><br/><span className="￥">￥1099</span></center></div>
-                     <div className="jianxuana_xia"><center><div className="img_xiaoxiao"><LazyLoad offsetTop={500} className="" ><img src="//gfs17.gomein.net.cn/T1uLEvB_D_1RCvBVdK_160.jpg" width="100%"/></LazyLoad></div><span className="spanss">双面玻璃 无线充电</span><br/><span className="￥">￥1299</span></center></div>
-                     <div className="jianxuana_xia"><center><div className="img_xiaoxiao"><LazyLoad offsetTop={500} className="" ><img src="//gfs17.gomein.net.cn/T1wpA_BvxT1RCvBVdK_160.jpg" width="100%"/></LazyLoad></div><span className="spanss">全面屏 送话费</span><br/><span className="￥">￥2099</span></center></div>
+                     <div className="jianxuana_xia"><center><div className="img_xiaoxiao"><LazyLoad offsetTop={500} className="" ><img src="//gfs17.gomein.net.cn/T12YWgBKdv1RCvBVdK_160.jpg" width="100%"/></LazyLoad></div><span className="spanssa">荣耀10 AI摄影</span><br/><span className="￥">￥1099</span></center></div>
+                     <div className="jianxuana_xia"><center><div className="img_xiaoxiao"><LazyLoad offsetTop={500} className="" ><img src="//gfs17.gomein.net.cn/T1uLEvB_D_1RCvBVdK_160.jpg" width="100%"/></LazyLoad></div><span className="spanssa">双面玻璃 无线充电</span><br/><span className="￥">￥1299</span></center></div>
+                     <div className="jianxuana_xia"><center><div className="img_xiaoxiao"><LazyLoad offsetTop={500} className="" ><img src="//gfs17.gomein.net.cn/T1wpA_BvxT1RCvBVdK_160.jpg" width="100%"/></LazyLoad></div><span className="spanssa">全面屏 送话费</span><br/><span className="￥">￥2099</span></center></div>
                     </div>
                          <div >
-                         <div className="jianxuana_xia"><center><div className="img_xiaoxiao"><img src="//gfs17.gomein.net.cn/T1qhEvBQZT1RCvBVdK_160.jpg" width="100%"/></div><span className="spanss">面部ID 全面屏</span><br/><span className="￥">￥2999</span></center></div>
-                         <div className="jianxuana_xia"><center><div className="img_xiaoxiao"><img src="//gfs17.gomein.net.cn/T1jvKjB4Lv1RCvBVdK_160.jpg" width="100%"/></div><span className="spanss">全面屏 柔光自拍</span><br/><span className="￥">￥5535</span></center></div>
-                         <div className="jianxuana_xia"><center><div className="img_xiaoxiao"><img src="//gfs17.gomein.net.cn/T1FkJgBmVT1RCvBVdK_160.jpg" width="100%"/></div><span className="spanss">大容量 全面屏</span><br/><span className="￥">￥2099</span></center></div>
+                         <div className="jianxuana_xia"><center><div className="img_xiaoxiao"><img src="//gfs17.gomein.net.cn/T1qhEvBQZT1RCvBVdK_160.jpg" width="100%"/></div><span className="spanssa">面部ID 全面屏</span><br/><span className="￥">￥2999</span></center></div>
+                         <div className="jianxuana_xia"><center><div className="img_xiaoxiao"><img src="//gfs17.gomein.net.cn/T1jvKjB4Lv1RCvBVdK_160.jpg" width="100%"/></div><span className="spanssa">全面屏 柔光自拍</span><br/><span className="￥">￥5535</span></center></div>
+                         <div className="jianxuana_xia"><center><div className="img_xiaoxiao"><img src="//gfs17.gomein.net.cn/T1FkJgBmVT1RCvBVdK_160.jpg" width="100%"/></div><span className="spanssa">大容量 全面屏</span><br/><span className="￥">￥2099</span></center></div>
                     </div>
                          <div >
-                         <div className="jianxuana_xia"><center><div className="img_xiaoxiao"><img src="//gfs17.gomein.net.cn/T1qabbB7dT1RCvBVdK_160.jpg" width="100%"/></div><span className="spanss">大容量 全面屏</span><br/><span className="￥">￥2999</span></center></div>
-                         <div className="jianxuana_xia"><center><div className="img_xiaoxiao"><img src="//gfs17.gomein.net.cn/T1NEhQBCxT1RCvBVdK_160.jpg" width="100%"/></div><span className="spanss">双面玻璃 无线充电</span><br/><span className="￥">￥1099</span></center></div>
-                         <div className="jianxuana_xia"><center><div className="img_xiaoxiao"><img src="//gfs17.gomein.net.cn/T1FkJgBmVT1RCvBVdK_160.jpg" width="100%"/></div><span className="spanss">物美价廉 真实惠</span><br/><span className="￥">￥1300</span></center></div>
+                         <div className="jianxuana_xia"><center><div className="img_xiaoxiao"><img src="//gfs17.gomein.net.cn/T1qabbB7dT1RCvBVdK_160.jpg" width="100%"/></div><span className="spanssa">大容量 全面屏</span><br/><span className="￥">￥2999</span></center></div>
+                         <div className="jianxuana_xia"><center><div className="img_xiaoxiao"><img src="//gfs17.gomein.net.cn/T1NEhQBCxT1RCvBVdK_160.jpg" width="100%"/></div><span className="spanssa">双面玻璃 无线充电</span><br/><span className="￥">￥1099</span></center></div>
+                         <div className="jianxuana_xia"><center><div className="img_xiaoxiao"><img src="//gfs17.gomein.net.cn/T1FkJgBmVT1RCvBVdK_160.jpg" width="100%"/></div><span className="spanssa">物美价廉 真实惠</span><br/><span className="￥">￥1300</span></center></div>
                     </div>
                     </ReactSwipe>
                     </div>
@@ -358,19 +362,19 @@ class InndexMain extends React.Component{
                     <div className="diannao_xia">
                            <ReactSwipe className="lunbotu1" swipeOptions={{continuous: true, speed: 400,disableScroll: false,showPagination: false}} >
                         <div >
-                        <div className="jianxuana_xia"><center><div className="img_xiaoxiao"><LazyLoad offsetTop={500} className="" ><img src="//gfs17.gomein.net.cn/T12YWgBKdv1RCvBVdK_160.jpg" width="100%"/></LazyLoad></div><span className="spanss">荣耀10 AI摄影</span><br/><span className="￥">￥1099</span></center></div>
-                        <div className="jianxuana_xia"><center><div className="img_xiaoxiao"><LazyLoad offsetTop={500} className="" ><img src="//gfs17.gomein.net.cn/T1uLEvB_D_1RCvBVdK_160.jpg" width="100%"/></LazyLoad></div><span className="spanss">双面玻璃 无线充电</span><br/><span className="￥">￥1299</span></center></div>
-                        <div className="jianxuana_xia"><center><div className="img_xiaoxiao"><LazyLoad offsetTop={500} className="" ><img src="//gfs17.gomein.net.cn/T1wpA_BvxT1RCvBVdK_160.jpg" width="100%"/></LazyLoad></div><span className="spanss">全面屏 送话费</span><br/><span className="￥">￥2099</span></center></div>
+                        <div className="jianxuana_xia"><center><div className="img_xiaoxiao"><LazyLoad offsetTop={500} className="" ><img src="//gfs17.gomein.net.cn/T12YWgBKdv1RCvBVdK_160.jpg" width="100%"/></LazyLoad></div><span className="spanssa">荣耀10 AI摄影</span><br/><span className="￥">￥1099</span></center></div>
+                        <div className="jianxuana_xia"><center><div className="img_xiaoxiao"><LazyLoad offsetTop={500} className="" ><img src="//gfs17.gomein.net.cn/T1uLEvB_D_1RCvBVdK_160.jpg" width="100%"/></LazyLoad></div><span className="spanssa">双面玻璃 无线充电</span><br/><span className="￥">￥1299</span></center></div>
+                        <div className="jianxuana_xia"><center><div className="img_xiaoxiao"><LazyLoad offsetTop={500} className="" ><img src="//gfs17.gomein.net.cn/T1wpA_BvxT1RCvBVdK_160.jpg" width="100%"/></LazyLoad></div><span className="spanssa">全面屏 送话费</span><br/><span className="￥">￥2099</span></center></div>
                        </div>
                             <div >
-                            <div className="jianxuana_xia"><center><div className="img_xiaoxiao"><img src="//gfs17.gomein.net.cn/T1qhEvBQZT1RCvBVdK_160.jpg" width="100%"/></div><span className="spanss">面部ID 全面屏</span><br/><span className="￥">￥2999</span></center></div>
-                            <div className="jianxuana_xia"><center><div className="img_xiaoxiao"><img src="//gfs17.gomein.net.cn/T1jvKjB4Lv1RCvBVdK_160.jpg" width="100%"/></div><span className="spanss">全面屏 柔光自拍</span><br/><span className="￥">￥5535</span></center></div>
-                            <div className="jianxuana_xia"><center><div className="img_xiaoxiao"><img src="//gfs17.gomein.net.cn/T1FkJgBmVT1RCvBVdK_160.jpg" width="100%"/></div><span className="spanss">大容量 全面屏</span><br/><span className="￥">￥2099</span></center></div>
+                            <div className="jianxuana_xia"><center><div className="img_xiaoxiao"><img src="//gfs17.gomein.net.cn/T1qhEvBQZT1RCvBVdK_160.jpg" width="100%"/></div><span className="spanssa">面部ID 全面屏</span><br/><span className="￥">￥2999</span></center></div>
+                            <div className="jianxuana_xia"><center><div className="img_xiaoxiao"><img src="//gfs17.gomein.net.cn/T1jvKjB4Lv1RCvBVdK_160.jpg" width="100%"/></div><span className="spanssa">全面屏 柔光自拍</span><br/><span className="￥">￥5535</span></center></div>
+                            <div className="jianxuana_xia"><center><div className="img_xiaoxiao"><img src="//gfs17.gomein.net.cn/T1FkJgBmVT1RCvBVdK_160.jpg" width="100%"/></div><span className="spanssa">大容量 全面屏</span><br/><span className="￥">￥2099</span></center></div>
                        </div>
                             <div >
-                            <div className="jianxuana_xia"><center><div className="img_xiaoxiao"><img src="//gfs17.gomein.net.cn/T1qabbB7dT1RCvBVdK_160.jpg" width="100%"/></div><span className="spanss">大容量 全面屏</span><br/><span className="￥">￥2999</span></center></div>
-                            <div className="jianxuana_xia"><center><div className="img_xiaoxiao"><img src="//gfs17.gomein.net.cn/T1NEhQBCxT1RCvBVdK_160.jpg" width="100%"/></div><span className="spanss">双面玻璃 无线充电</span><br/><span className="￥">￥1099</span></center></div>
-                            <div className="jianxuana_xia"><center><div className="img_xiaoxiao"><img src="//gfs17.gomein.net.cn/T1FkJgBmVT1RCvBVdK_160.jpg" width="100%"/></div><span className="spanss">物美价廉 真实惠</span><br/><span className="￥">￥1300</span></center></div>
+                            <div className="jianxuana_xia"><center><div className="img_xiaoxiao"><img src="//gfs17.gomein.net.cn/T1qabbB7dT1RCvBVdK_160.jpg" width="100%"/></div><span className="spanssa">大容量 全面屏</span><br/><span className="￥">￥2999</span></center></div>
+                            <div className="jianxuana_xia"><center><div className="img_xiaoxiao"><img src="//gfs17.gomein.net.cn/T1NEhQBCxT1RCvBVdK_160.jpg" width="100%"/></div><span className="spanssa">双面玻璃 无线充电</span><br/><span className="￥">￥1099</span></center></div>
+                            <div className="jianxuana_xia"><center><div className="img_xiaoxiao"><img src="//gfs17.gomein.net.cn/T1FkJgBmVT1RCvBVdK_160.jpg" width="100%"/></div><span className="spanssa">物美价廉 真实惠</span><br/><span className="￥">￥1300</span></center></div>
                        </div>
                        </ReactSwipe>
                     </div>
@@ -406,12 +410,32 @@ class InndexMain extends React.Component{
 
 
 
+                    <IndexXiaLa />
 
 
 
+                    <div className="daLong" id="daLong" style={{width:'100%'}}>
 
-                    <div className="daLong">
-                        123
+                        <LazyLoad height={2400} once overflow = {true}>
+                            <IndexXiaLa />
+                        </LazyLoad>
+                        
+                        <LazyLoad height={2400} once overflow = {true}>
+                            <IndexXiaLa />
+                        </LazyLoad>
+                        <LazyLoad height={2400} once overflow = {true}>
+                            <IndexXiaLa />
+                        </LazyLoad>
+                        <LazyLoad height={2400} once overflow = {true}>
+                            <IndexXiaLa />
+                        </LazyLoad>
+                        <LazyLoad height={2400} once overflow = {true}>
+                            <IndexXiaLa />
+                        </LazyLoad>
+                        <LazyLoad height={2400} once overflow = {true}>
+                            <IndexXiaLa />
+                        </LazyLoad>
+                   
                     </div>
 
                 </div>

@@ -7,7 +7,6 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import { BrowserRouter, Route, Router, Link, hashHistory,ReactRouter } from 'react-router-dom';
 
-
 import registerServiceWorker from './registerServiceWorker';
 
 import HelloIndex from './components/HelloIndex';
@@ -16,6 +15,11 @@ import HelloCar   from './components/HelloCar';
 import HelloMy    from './components/HelloMy';
 import HelloKuxuan from './components/HelloKuxuan';
 import HelloLogin from './components/HelloLogin';
+
+
+import Classify from './components/classfy';
+import Goodslist from './components/goodslist';
+import Details from './components/details';
 
 const store = createStore((state = {
     // 状态名：状态值
@@ -45,6 +49,9 @@ ReactDOM.render(
               <Route       path="/my"   component={HelloMy} />
               <Route       path="/kuxuan"   component={HelloKuxuan} />
               <Route       path="/login" component={HelloLogin} />
+              <Route       path="/classify"  component={Classify} />
+              <Route       path="/goodslist"  component={Goodslist} />
+              <Route       path="/details"  component={Details} />
         </div>
         
     </BrowserRouter>

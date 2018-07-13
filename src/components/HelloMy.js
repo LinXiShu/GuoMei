@@ -7,21 +7,21 @@ import {BrowserRouter, Route, Router, Link} from 'react-router-dom';
 import '../css/my.css';
 
 import Login from './HelloLogin';
-import Mys from './my/Mys'
+import Mys from './my/Mys';
+
 
 
 class HelloMy extends React.Component{
 
     state = {
 
-        loginsss : <Mys />
     }
 
     render(){
 
         return (
             <div>
-                {this.state.loginsss}
+                <Mys />
             </div>
         )
     }

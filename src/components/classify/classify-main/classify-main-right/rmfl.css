@@ -1,0 +1,95 @@
+ .lista{
+
+    margin: 0.3125rem 0 ;
+ }
+
+ .lista .name{
+    display: block;
+    height: 0.46875rem;
+ }
+
+ .cat-list  .banner {
+    width: 100%;
+    display: block;
+    margin-bottom: .2rem;
+}
+
+ .cat-list .banner img {
+    width: 100%;
+    height: 2.32rem;
+    max-height: 2.32rem;
+}
+
+.cat-list {
+    height: 100%;
+    overflow-y: auto;
+    background: #fff;
+    flex: 1;
+    word-wrap: break-word;
+    word-break: break-all;
+    padding:0.15rem;
+    width:7.865rem;
+    position:fixed;
+    right:0;
+    top:1.09375rem;
+}
+.cat-list h3 {
+    font-size:0.2885rem;
+    padding-bottom:0.2125rem;
+    color: #999;
+}
+.cat-list .item ul{
+    overflow:hidden;
+   
+}
+.cat-list .item li {
+    float: left;
+    width: 31%;
+    margin-right: 3%;
+    margin-bottom:0.25rem;
+    background: #F8F8F8;
+    text-align: center;
+    overflow: hidden;
+    padding-bottom:0.125rem;
+}
+.cat-list .item li Link{
+   display:block;
+    width: 31%;
+    margin-right: 3%;
+    margin-bottom:0.25rem;
+    background: #F8F8F8;
+    text-align: center;
+    overflow: hidden;
+    padding-bottom:0.125rem;
+}
+.cat-list .item li:nth-child(3n) {
+    margin-right: 0;
+}
+.cat-list .item li span {
+    margin-top:0.46875rem;
+    height: .48rem;
+    line-height: .48rem;
+    text-align: center;
+    font-size:0.3125rem;
+    color: #666;
+    overflow: hidden;
+    word-break: break-all;
+   ;
+}
+.cat-list .item li img {
+    width: 1.96rem;
+    height: 2.06rem;
+    margin: 0 auto;
+    border: 0;
+    background: #f8f8f8;
+}
+.cat-list .brand ul{
+    height:5.25rem;
+}
+.cat-list .brand li img {
+    width: 1.96rem;
+    height: 1.06rem;
+    margin: 0 auto;
+    
+    background: #f8f8f8;
+}

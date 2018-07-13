@@ -38,7 +38,7 @@ html{
     border-radius: 0.15625rem;
     font-size: 0.3rem;
 }
-.header .spans{
+.header .spansa{
     float: right;
     display: block;
     width: 0.6rem;
@@ -46,12 +46,13 @@ html{
     line-height: 0;
     margin-top: 0.5rem;
     margin-right: 0.3125rem;
+    margin-left: 0.35625rem;
 }
-.header .spans i {
+.header .spansa i {
      font-size: 0.625rem;
      line-height: 0.35rem;
 }
-.header  .ss{
+.header  .ssas{
 
     float: right;
     border-radius: 6px;
@@ -63,6 +64,10 @@ html{
     line-height: 0.7rem;
     color: #666;
     font-size: 0.46875rem;
+}
+.header .ssas i {
+    font-size: 0.625rem;
+
 }
 
 .Main{
@@ -517,7 +522,7 @@ width: 100%;
 .jianxuana_xia img{
 
 }
-.spanss{
+.spanssa{
 
     font-size: 0.28875rem;
 }
