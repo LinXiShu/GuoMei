@@ -64,7 +64,7 @@ app.get('/xuan',(req, res) =>{
         {
             // id:req.query.id
             _id:req.query._id,
-            "goods.id":(req.query.id)*1,
+            "goods.id":req.query.id,
         },{
             $set: {
                 // checksd:req.query.fg
@@ -83,7 +83,62 @@ app.get('/xuan',(req, res) =>{
 });
 
 app.get('/shan',(req,res)=>{
-    mongo.collection('gome','buycar', function(collection) {}),(err,result)=>{res.send(result)}
+    // console.log(666)
+    mongo.collection('gome','buycar', function(collection) {
+        // collection.remove({
+        //     _id:req.query._id,
+        //     "goods.id":req.query.id,
+        //     "goods.length":req.query.ix
+        // })
+        // console.log(req.query.id)
+        if((req.query.ix-1)>=0){
+            collection.update(
+                {
+                    _id:req.query._id
+                },{
+                    $pull:{
+                        goods:{
+                            id:req.query.id
+                        }
+                    }
+                },{
+                    multi: true 
+                }
+            )
+        }else if((req.query.ix-1)<0){
+            collection.remove(
+                {
+                    _id:req.query._id
+                }
+            )
+        }
+    }),(err,result)=>{res.send(result)}
+});
+
+app.get('/qty',(req,res)=>{
+    // console.log(666)
+    mongo.collection('gome','buycar', function(collection) {
+        collection.update(
+            {
+                // id:req.query.id
+                _id:req.query._id,
+                "goods.id":req.query.id,
+            },{
+                $set: {
+                    // checksd:req.query.fg
+                    "goods.$.qty":req.query.qty
+                },
+                // 记录更新时间
+                // $currentDate: { lastModified: true }
+            },{
+                multi: true 
+            },(err, result) => {
+                if(result){
+                    res.send(result)
+                }
+            }
+        )
+    })
 })
 
 app.listen(13838);

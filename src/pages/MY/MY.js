@@ -2,15 +2,20 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 // import $ from 'jquery';
 
-import './CartTopRiao.css';
+import './MY.css';
 
-class CartTopRiao extends Component {
+import MyHeader from '../../components/MY/MyHeader/MyHeader'
+import MyMain1 from '../../components/MY/MyMain1/MyMain1'
+import MyMain2 from '../../components/MY/MyMain2/MyMain2'
+
+
+class MY extends Component {
 	constructor(props) {
 		super(props);
 		//类实例化，执行
 		this.state = {
             // 这里存放数据
-            // bool:false
+			// bool:false
 		}
     }
     
@@ -29,14 +34,11 @@ class CartTopRiao extends Component {
 	render() {
 		return (
             // 这里写html结构
-			<div className="CartTopRiao" style={{display:this.props.istoggle?'block':'none'}}>
-				<p className="Riao_icn"></p>
-				<div>
-					<a className="Riao_list Riao_list1"><i></i><p>首页</p></a>
-					<a className="Riao_list Riao_list2"><i></i><p>分类</p></a>
-					<a href="/ShoppingCart" className="Riao_list Riao_list3"><i></i><p>购物车</p></a>
-					<a className="Riao_list Riao_list4"><i></i><p>我的</p></a>
-				</div>
+			<div className="MY">
+				{/* <p onClick={this.toggle.bind(this)}>这是首页</p> */}
+				<MyHeader/>
+                <MyMain1/>
+                <MyMain2/>
 			</div>
 		);
 	}
@@ -52,8 +54,8 @@ export default connect((state) => {
 			//可以触发多个
 			dispatch({
                 // type: 'isShow',
-                // isShow: false
+                // isShow: true
 			})
 		}
 	}
-})(CartTopRiao);
+})(MY);

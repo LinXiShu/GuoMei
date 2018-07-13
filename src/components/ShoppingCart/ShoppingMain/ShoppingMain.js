@@ -34,7 +34,19 @@ class ShoppingMain extends Component {
 				// 		}
 				// 	}
 				// }
-			this.props.kdkds.bind(this)('yytut')
+
+				// 触发传参给购物车脚步总计结算
+				let arr = [];
+				data.map((item)=>{
+					item.goods.map((it)=>{
+						let obj = {};
+						obj.pic = it.pice;
+						obj.qty = it.qty;
+						arr.push(obj);
+						return arr;
+					})
+				})
+				this.props.kdkds.bind(this)(arr)
 			}
 		});
 	}
@@ -51,7 +63,7 @@ class ShoppingMain extends Component {
 		this.state.buycar.map((item,index)=>{
 			if(item._id === _id){
 				item.goods.map((im,ix)=>{
-					if(im.id === id*1){
+					if(im.id === id){
 						if(im.checksd==="xuan"){
 							im.checksd = "";
 							this.setState({buycar: this.state.buycar})
@@ -91,7 +103,7 @@ class ShoppingMain extends Component {
 			}
 		})
 	}
-	// 编辑商品列表
+	// 编辑按钮
 	hjk(e){
 		// console.log($(e.target).parent().parent())
 		// let e = $(e.target).parent().parent().attr("id");
@@ -100,25 +112,80 @@ class ShoppingMain extends Component {
 		})
 	}
 	// 商品数量减少
-	jjian(e){
-		let n = $(e.target).parent();
-		let m = $('input',$(n)).val();
-		if(m<=0){
-			m=m;
-		}else if(m>0){
-			m--;
-		}
-		$('input',$(n)).val(m)
-		// console.log($('input',$(n)).val())
-
+	jjian(_id,id,q,e){
+		// console.log(_id,id,q)
+		this.state.buycar.map((item,index)=>{
+			if(item._id===_id){
+				item.goods.map((im,ix)=>{
+					if(im.id===id){
+						if(q===0){
+							im.qty=0;
+						}else{
+							im.qty = q-1;
+						}
+						this.setState({
+							buycar:this.state.buycar
+						})
+						let arr = [];
+						this.state.buycar.map((item)=>{
+							item.goods.map((it)=>{
+								let obj = {};
+								obj.pic = it.pice;
+								obj.qty = it.qty;
+								arr.push(obj);
+								return arr;
+							})
+						})
+						this.props.kdkds.bind(this)(arr)
+						this.gfre(_id,id,im.qty)
+					}
+				})
+			}
+		})
 	}
+	
 	// 商品数量增加
-	jjia(e){
-		let n = $(e.target).parent();
-		let m = $('input',$(n)).val();
-		m++;
-		$('input',$(n)).val(m)
+	jjia(_id,id,q,e){
+		this.state.buycar.map((item,index)=>{
+			if(item._id===_id){
+				item.goods.map((im,ix)=>{
+					if(im.id===id){
+						im.qty = q*1+1;
+						this.setState({
+							buycar:this.state.buycar
+						})
+						let arr = [];
+						this.state.buycar.map((item)=>{
+							item.goods.map((it)=>{
+								let obj = {};
+								obj.pic = it.pice;
+								obj.qty = it.qty;
+								arr.push(obj);
+								return arr;
+							})
+						})
+						this.props.kdkds.bind(this)(arr)
+						this.gfre(_id,id,im.qty)
+					}
+				})
+			}
+		})
 	}
+
+	// 数量更改后传入数据库
+	gfre(_id,id,qty){
+		// console.log(_id,id,qty)
+		$.ajax({
+			url:"http://localhost:13838/qty",
+			data:{
+				_id:_id,
+				id:id,
+				qty:qty
+			}
+		})
+	}
+
+
 	删除单个商品
 	dit(e){
 		let _id = $(e.target).parent().parent().parent().attr('id');
@@ -127,21 +194,48 @@ class ShoppingMain extends Component {
 		// $(e.target).parent().parent();
 		this.state.buycar.map((item,index)=>{
 			if(item._id === _id){
+				// console.log(item._id,_id)
 				item.goods.map((im,ix)=>{
-					if(im.id === id*1){
+					// console.log(im.id,id)
+					if(im.id === id){
 						// console.log(im)
 						// console.log(item)
 						item.goods.splice(ix,1);
+						$.ajax({
+							url:"http://localhost:13838/shan",
+							context:this,
+							data:{
+								_id:_id,
+								id : id,
+								ix: item.goods.length
+							},
+							success(data){
+								console.log(data)
+							}
+						})
+
+						
+						// 清空商品后删除店铺
 						if((item.goods.length-1)<0){
 							// console.log(666)
 							this.state.buycar.splice(index,1)
-							$.ajax({
-								url:"http://localhost:13838/shan",
-							})
 						}
 						this.setState({
 							buycar:this.state.buycar
 						})
+
+						// 触发传参给购物车脚步总计结算
+						let arr = [];
+						this.state.buycar.map((item)=>{
+							item.goods.map((it)=>{
+								let obj = {};
+								obj.pic = it.pice;
+								obj.qty = it.qty;
+								arr.push(obj);
+								return arr;
+							})
+						})
+						this.props.kdkds.bind(this)(arr)
 					}
 					// console.log(this.state.buycar)
 				})
@@ -208,7 +302,7 @@ class ShoppingMain extends Component {
 													<p>fddssdafas</p>
 													<p>
 														<span>￥{gs.pice}</span>
-														<div><i onClick={self.jjian.bind(self)}></i><input type="number" value={gs.qty}/><i onClick={self.jjia.bind(self)}></i></div>
+														<div><i onClick={self.jjian.bind(self,item._id,gs.id,gs.qty,)}></i><input type="text" value={gs.qty}/><i onClick={self.jjia.bind(self,item._id,gs.id,gs.qty,)}></i></div>
 													</p>
 												</div>
 											</div>
@@ -239,10 +333,11 @@ export default connect((state) => {
 				istoggle: true,
 			});
 		},
-		kdkds:(p)=>{
-			console.log(p);
+		kdkds:(arr)=>{
+			// console.log(arr);
 			dispatch({
-				type:'',
+				type:'total',
+				fdfh:arr
 			})
 		}
 	}

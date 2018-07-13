@@ -1,0 +1,8 @@
+.MyMain2{
+    display: flex;
+    margin-bottom: 0.3125rem;
+}
+.MyMain2 li{
+    flex: 20%;
+    height: 2.1875rem;
+}

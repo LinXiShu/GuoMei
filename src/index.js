@@ -9,6 +9,8 @@ import './static/css/base.css';
 import registerServiceWorker from './registerServiceWorker';
 
 import ShoppingCart from './pages/ShoppingCart/ShoppingCart';
+import MY from './pages/MY/MY';
+
 
 const store = createStore((state = {
     // 状态名：状态值
@@ -27,6 +29,10 @@ const store = createStore((state = {
         return Object.assign({}, state, {
             istoggle: action.istoggle,
         });
+        case 'total':
+        return Object.assign({},state,{
+            total:action.fdfh,
+        });
 		default:
 			return state
 	}
@@ -38,6 +44,7 @@ ReactDOM.render(
             <div>
                 {/* <Xhome /> */}
                 <Route path="/ShoppingCart" component={ShoppingCart}/>
+                <Route path="/MY" component={MY}/>
             </div>
         </Provider>
         </Router>, 

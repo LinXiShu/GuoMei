@@ -1,0 +1,88 @@
+.MyMain1{
+    height: 3.28125rem;
+    background: url('../../../static/images/userBg.png') no-repeat center center;
+    background-size: 100%;
+}
+
+.MyMain1_T{
+    padding-top: 0.3125rem;
+    text-align: right;
+}
+
+.MyMain1_T a{
+    display: inline-block;
+    width: 0.9375rem;
+    height: 0.78125rem;
+    vertical-align: bottom;
+    background: url('../../../static/images/gift.b5b6719101.gif') no-repeat center bottom;
+    margin: 0px 0.25rem;
+}
+
+.MyMain1_T a:nth-child(2){
+    width: 0.546875rem;
+    height: 0.515625rem;
+    background: url('../../../static/images/messageIcon.e66ecc9715.png') no-repeat center bottom;
+    background-size: 100%;
+}
+
+.MyMain1_C{
+    display: flex;
+}
+
+.user{
+    display: flex;
+    flex: 1;
+}
+
+.userimg{
+    width: 1.46875rem;
+    height: 1.46875rem;
+    border-radius: 50%;
+    margin-left: 0.671875rem;
+    background: url('../../../static/images/T1YvKTBsDv1RCvBVdK.png') no-repeat center center;
+    background-size: 100%;
+}
+
+.userimg a{
+    display: block;
+    height: 100%;
+}
+
+.username{
+    padding-left: 0.28125rem;
+    line-height: 1.46875rem;
+}
+.username a{
+    font-size: 29px;
+    color: #FFF;
+}
+
+.MyMain1_C_R{
+    display: flex;
+    align-items: center;
+    width: 1.78125rem;
+}
+
+.MyMain1_C_R a{
+    display: flex;
+    width: 100%;
+    height: 0.78125rem;
+    line-height: 0.78125rem;
+    text-align: center;
+    background: url('../../../static/images/memberBg.a403556924.png') no-repeat center center;
+    background-size: 100%;
+    font-size: 22px;
+    color: #FFF;
+    /* border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%; */
+}
+
+.MyMain1_C_R a span:nth-child(1){
+    width: 0.8125rem;
+    text-align: center;
+    color: #FD0175;
+}
+
+.MyMain1_C_R a span:nth-child(2){
+    margin-left: 0.109375rem;
+}

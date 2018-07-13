@@ -13,7 +13,7 @@ class ShoppingCartFoot extends Component {
 			buycar:'',
 			bool:false
 		}
-    }
+	}
 
     // 函数表达式
 	/*toggle(){
@@ -32,11 +32,42 @@ class ShoppingCartFoot extends Component {
 				<div className="ShoppingCartFoot_L">
                     <div className="ShoppingCartFoot_l"><i></i><span>全选</span></div>
                     <div className="ShoppingCartFoot_C">
-                        <div><span>总计:</span><span>￥</span></div>
+                        <div><span>总计:</span><span>￥{
+							((self)=>{
+								if(self.props.total==="undefined"){
+									return;
+								}else if(self.props.total){
+									let dsd=0;
+									self.props.total.map((item)=>{
+										// console.log(item)
+										dsd += item.pic*item.qty;
+										// console.log(dsd)
+										// dsd += dsd
+										// console.log(dsd)
+									})
+									return dsd;
+								}
+								// console.log(self.props.total)
+							})(this)
+						}</span></div>
                         <div><span>已省:</span><span>￥</span></div>
                     </div>
                 </div>
-                <div className="ShoppingCartFoot_R">去结算({((self)=>{})(this)})</div>
+                <div className="ShoppingCartFoot_R">去结算({((self)=>{
+					if(self.props.total==="undefined"){
+						return;
+					}else if(self.props.total){
+						let dsd=0;
+						self.props.total.map((item)=>{
+							// console.log(item)
+							dsd += item.qty*1;
+							// console.log(dsd)
+							// dsd += dsd
+							// console.log(dsd)
+						})
+						return dsd;
+					}
+				})(this)})</div>
 			</div>
 		);
 	}
@@ -48,11 +79,11 @@ export default connect((state) => {
 }, (dispatch) => {
 	return {
         // 传参函数表达式
-		istoggle: () => {
+		XXX: () => {
 			//可以触发多个
 			dispatch({
-                type: 'istoggle',
-				istoggle: true,
+                // type: 'istoggle',
+				// istoggle: true,
 			});
 		}
 	}
