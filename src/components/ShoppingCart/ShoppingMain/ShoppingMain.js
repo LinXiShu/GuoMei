@@ -57,7 +57,8 @@ class ShoppingMain extends Component {
 					if(im.id === id){
 						if(im.checksd==="xuan"){
 							im.checksd = "";
-							this.setState({buycar: this.state.buycar})
+							$(item._id).removeClass("xuan");
+							this.setState({buycar: this.state.buycar});
 							let arr = [];
 							this.state.buycar.map((item)=>{
 								item.goods.map((it)=>{
@@ -86,7 +87,7 @@ class ShoppingMain extends Component {
 							});
 						}else if(im.checksd===""){
 							im.checksd = "xuan";
-							this.setState({buycar: this.state.buycar})
+							this.setState({buycar: this.state.buycar});
 							let arr = [];
 							this.state.buycar.map((item)=>{
 								item.goods.map((it)=>{
@@ -260,6 +261,10 @@ class ShoppingMain extends Component {
 		})
 	}
 
+	sfs(){
+		console.log(666)
+	}
+
     // 函数表达式
 	/*toggle(){
 		$.ajax({
@@ -315,12 +320,12 @@ class ShoppingMain extends Component {
 												<div className="list_ipt"><i className={gs.checksd} onClick={self.dfgd.bind(self)}></i></div>
 												<div className="list_img"><img src={gs.url}/></div>
 												<div className="list_ctr">
-													<p>{gs.txt}</p>
-													<p>fddssdafas</p>
-													<p>
+													<div>{gs.txt}</div>
+													<div>fddssdafas</div>
+													<div>
 														<span>￥{gs.pice}</span>
-														<div><i onClick={self.jjian.bind(self,item._id,gs.id,gs.qty,)}></i><input type="text" value={gs.qty}/><i onClick={self.jjia.bind(self,item._id,gs.id,gs.qty,)}></i></div>
-													</p>
+														<div><i onClick={self.jjian.bind(self,item._id,gs.id,gs.qty,)}></i><input type="text" value={gs.qty} onChange={self.sfs.bind(this)}/><i onClick={self.jjia.bind(self,item._id,gs.id,gs.qty,)}></i></div>
+													</div>
 												</div>
 											</div>
 											<div className="edit_area" style={{display:self.state.bool?"flex":"none"}}><span><i></i>移入收藏</span><span onClick={self.dit.bind(self)}><i></i>删除</span></div>

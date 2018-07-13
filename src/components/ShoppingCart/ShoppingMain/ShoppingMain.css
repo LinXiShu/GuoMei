@@ -104,47 +104,47 @@
     padding: 0 0.3125rem;
 }
 
-.list_ctr p:nth-child(1){
+.list_ctr div:nth-child(1){
     height: 0.9375rem;
     font-size: 24px;
     color: #333;
 }
 
-.list_ctr p:nth-child(2){
+.list_ctr div:nth-child(2){
     font-size: 22px;
     color: #999;
 }
 
-.list_ctr p:nth-child(3){
+.list_ctr div:nth-child(3){
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 0.1875rem;
 }
 
-.list_ctr p:nth-child(3) span{
+.list_ctr div:nth-child(3) span{
     font-size: 30px;
     color: #F20C59;
 }
 
-.list_ctr p:nth-child(3) div{
+.list_ctr div:nth-child(3) div{
     display: flex;
     border: 1px solid #999;
     border-radius: 0.078125rem;
 }
 
-.list_ctr p:nth-child(3) div i{
+.list_ctr div:nth-child(3) div i{
     display: block;
     width: 0.78125rem;
     background: url('../../../static/images/left.png') no-repeat center center;
     background-size: 100%;
 }
 
-.list_ctr p:nth-child(3) div i:nth-child(3){
+.list_ctr div:nth-child(3) div i:nth-child(3){
     background: url('../../../static/images/right.png') no-repeat center center;
 }
 
-.list_ctr p:nth-child(3) div input{
+.list_ctr div:nth-child(3) div input{
     width: 1.125rem;
     height: 0.65625rem;
     border: none;
