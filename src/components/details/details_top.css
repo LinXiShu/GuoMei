@@ -1,0 +1,152 @@
+a{text-decoration: none;}
+input{border:none;}
+.dheader{
+    color: #000;
+    background:#fff;
+    width: 100%;
+    z-index: 2;
+    position:fixed;
+ 
+    display:flex;
+    border-bottom: 0.015625rem solid #ccc;
+    top:0;left:0;
+    
+}
+.dh-left{
+    width:1.0625rem;
+    height:1.09375rem;
+    z-index: 100;
+}
+.dheader .dh-left .dh-back{
+    margin-left:0.2rem;
+    display: inline-block;
+    height:1.09375rem;
+    width:0.6875rem;
+    text-align: center;
+    line-height:1.09375rem ;
+    color:#fff;
+    margin-top:0.158125rem;
+   
+}
+
+.dheader .dh-left .dh-back .icon-back{
+    width:0.6875rem;
+    font-size:0.9375rem;
+    color:#666;
+   
+   
+}
+
+
+.dnav_list{
+    /* height: 1.09375rem; */
+    overflow: hidden;
+    margin: 0 17%;
+    width: 45%;
+
+}
+.dnav_list li{
+    float:left;
+    height:1.40375rem;
+    line-height:1.40375rem;
+    text-align: center;
+    width: 33.33%;
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+.dnav_list li span {
+    display:block;
+    font-size:0.45125rem;
+    height:1.40375rem;
+    line-height:1.40375rem;
+    text-align: center;
+    
+}
+.dnav_list .active span {
+    
+    color: #F20C59;
+    border-bottom: 2px solid #F20C59;
+    font-size:0.45125rem;
+    
+}
+
+
+
+
+ .dheader .dh-right{
+    margin-top:0.158125rem;
+    height:1.09375rem;
+    width:1.09375rem;
+    line-height: 1.09375rem;
+}
+.h-btn{
+    display:block;
+    height:1.09375rem;
+    width:0.6875rem;
+    color:#fff;
+}
+#icon-search{
+    
+    font-size:0.3125rem;
+}
+
+#category{
+    display:block;
+    height:1.09375rem;
+    width:0.6875rem;
+    font-weight: bold;
+   
+    font-size:0.546875rem;
+    color:#666;
+}
+ .dheader .dh-right .dtab-nav {
+  
+    width:4.375rem;
+    margin-right: auto;
+    margin-left: -0.67rem;
+    box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.94);
+    border-radius: 0.08rem;
+    position: absolute;
+    top:1.5625rem;
+    right: 0.15rem;
+  
+    z-index: 1;
+}
+
+.dheader .dh-right .dtab-nav::before,.tab-nav::after{
+            content:'';
+            position:absolute;
+            top:-35px;
+            right:20px;
+            border:20px solid transparent;
+            border-bottom-color:#fff;
+        }
+.tab-nav::after{top:-37px;border-bottom-color:#fff;}
+.dtab-nav a {
+
+    display: block;
+    overflow: hidden;
+    color: #666;
+    line-height:1.46875rem;
+}
+.dtab-nav p {
+    position: relative;
+    height:1.09375rem;
+    line-height:1.09375rem;
+    color: #00050A;
+    font-size:0.40625rem;
+    text-align: left;
+    padding-left:1.5625rem;
+}
+.dtab-nav p i{
+    position: absolute;
+    left: 0.4rem;
+    color: #00050A;
+    width: 0.44rem;
+    height:1.09375rem;
+    line-height:1.09375rem;
+    font-size:0.625rem;
+}
+

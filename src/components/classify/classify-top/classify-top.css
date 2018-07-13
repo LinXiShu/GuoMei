@@ -1,0 +1,135 @@
+a{text-decoration: none;}
+input{border:none;}
+.fh_header{
+    color: #000;
+    background:#fff;
+    width: 100%;
+    z-index: 2;
+    position:fixed;
+ 
+    display:flex;
+    border-bottom: 0.015625rem solid #ccc;
+    top:0;left:0;
+}
+.h-left{
+    width:1.0625rem;
+    height:1.09375rem;
+    z-index: 100;
+}
+.h-back{
+    margin-left:0.2rem;
+    display: inline-block;
+    height:1.09375rem;
+    width:0.6875rem;
+    text-align: center;
+    line-height:1.09375rem ;
+   
+}
+.h-back{
+    color:#fff;
+}
+.h-back .icon-back{
+    width:0.6875rem;
+    font-size:0.9375rem;
+    color:#666;
+   
+   
+}
+.h-cnt {
+    margin-right:0.5625rem;
+    margin-left:0.46875rem;
+    width:7.115rem;
+    text-align: center;
+}
+.input-box {
+    height:0.759375rem;
+    margin-top:0.165rem;
+    padding: 0 0.3125rem 0 0.3125rem;
+    border-radius:0.625rem;
+    text-align: left;
+    background-color: #f6f6f6;
+    position: relative;
+
+}
+.input-box .icon-search{
+    position: absolute;
+ 
+    font-size: 0.3rem;
+    top:0.234375rem;
+    right:0.15625rem;
+    height:0.625rem;
+    width:0.625rem;
+    display:block;
+}
+.input-box input {
+    display: block;
+    width: 90%;
+    height: 100%;
+    font-size:0.28125rem;
+    background:#f6f6f6;
+}
+.h-right{
+    height:1.09375rem;
+    width:1.09375rem;
+    line-height: 1.09375rem;
+}
+.h-btn{
+    display:block;
+    height:1.09375rem;
+    width:0.6875rem;
+    color:#fff;
+}
+#icon-search{
+    
+    font-size:0.3125rem;
+}
+
+#category{
+    display:block;
+    height:1.09375rem;
+    width:0.6875rem;
+    font-weight: bold;
+   
+    font-size:0.546875rem;
+    color:#666;
+}
+.tab-nav {
+  
+    width:4.375rem;
+    margin-right: auto;
+    margin-left: -0.67rem;
+    box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.94);
+    border-radius: 0.08rem;
+    position: absolute;
+    top:0;
+    right: 0.15rem;
+  
+    z-index: 1;
+}
+.tab-nav a {
+
+    display: block;
+    overflow: hidden;
+    color: #666;
+    line-height:1.46875rem;
+}
+.tab-nav p {
+    position: relative;
+    height:1.09375rem;
+    line-height:1.09375rem;
+    color: #00050A;
+    font-size:0.40625rem;
+    text-align: left;
+    padding-left:1.5625rem;
+}
+.tab-nav p i{
+    position: absolute;
+    left: 0.4rem;
+    color: #00050A;
+    width: 0.44rem;
+    height:1.09375rem;
+    line-height:1.09375rem;
+    font-size:0.625rem;
+}
+

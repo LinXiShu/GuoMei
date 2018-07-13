@@ -10,7 +10,6 @@ import {BrowserRouter, Route, Router, Link} from 'react-router-dom';
 import '../css/kuxuan.css';
 import LazyLoad from 'react-lazy-load';
 
-
 class HelloKuxuan extends React.Component{
     // Hexo
   componentDidMount(props){
