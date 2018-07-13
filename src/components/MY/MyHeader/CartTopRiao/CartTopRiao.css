@@ -27,22 +27,27 @@
 .Riao_list i{
     display: block;
     width: 1.875rem;
-    background-size: 40%;
 }
 .Riao_list1 i{
     background: url('../../../../static/images/Riao_list1.png') no-repeat center center;
+    background-size: 40%;
 }
 
 .Riao_list2 i{
     background: url('../../../../static/images/Riao_list2.png') no-repeat center center;
+    background-size: 40%;
+
 }
 
 .Riao_list3 i{
     background: url('../../../../static/images/Riao_list3.png') no-repeat center center;
+    background-size: 40%;
+
 }
 
 .Riao_list4 i{
     background: url('../../../../static/images/Riao_list4.png') no-repeat center center;
+    background-size: 40%;
 }
 
 .Riao_list p{

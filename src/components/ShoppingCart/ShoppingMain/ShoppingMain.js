@@ -24,16 +24,6 @@ class ShoppingMain extends Component {
 			success(data){
 				// console.log(data)
 				this.setState({buycar: data});
-				// console.log(this);
-				// for(let i=0; i<this.state.buycar.length;i++){
-				// 	for(let j=0;j<this.state.buycar[i].goods.length;j++){
-				// 		let a = this.state.buycar[i].goods[j];
-				// 		// console.log(a)
-				// 		if(a.checksd === "xuan"){
-				// 			$('i','.goodscar_T').addClass("xuan")
-				// 		}
-				// 	}
-				// }
 
 				// 触发传参给购物车脚步总计结算
 				let arr = [];
@@ -42,6 +32,7 @@ class ShoppingMain extends Component {
 						let obj = {};
 						obj.pic = it.pice;
 						obj.qty = it.qty;
+						obj.checksd = it.checksd;
 						arr.push(obj);
 						return arr;
 					})
@@ -67,6 +58,18 @@ class ShoppingMain extends Component {
 						if(im.checksd==="xuan"){
 							im.checksd = "";
 							this.setState({buycar: this.state.buycar})
+							let arr = [];
+							this.state.buycar.map((item)=>{
+								item.goods.map((it)=>{
+									let obj = {};
+									obj.pic = it.pice;
+									obj.qty = it.qty;
+									obj.checksd = it.checksd;
+									arr.push(obj);
+									return arr;
+								})
+							})
+							this.props.kdkds.bind(this)(arr)
 							// console.log(this)
 							$.ajax({
 								type:'get',
@@ -84,6 +87,18 @@ class ShoppingMain extends Component {
 						}else if(im.checksd===""){
 							im.checksd = "xuan";
 							this.setState({buycar: this.state.buycar})
+							let arr = [];
+							this.state.buycar.map((item)=>{
+								item.goods.map((it)=>{
+									let obj = {};
+									obj.pic = it.pice;
+									obj.qty = it.qty;
+									obj.checksd = it.checksd;
+									arr.push(obj);
+									return arr;
+								})
+							})
+							this.props.kdkds.bind(this)(arr)
 							$.ajax({
 								type:'get',
 								url:'http://localhost:13838/xuan',
@@ -132,6 +147,7 @@ class ShoppingMain extends Component {
 								let obj = {};
 								obj.pic = it.pice;
 								obj.qty = it.qty;
+								obj.checksd = it.checksd;
 								arr.push(obj);
 								return arr;
 							})
@@ -160,6 +176,7 @@ class ShoppingMain extends Component {
 								let obj = {};
 								obj.pic = it.pice;
 								obj.qty = it.qty;
+								obj.checksd = it.checksd;
 								arr.push(obj);
 								return arr;
 							})

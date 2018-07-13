@@ -39,11 +39,9 @@ class ShoppingCartFoot extends Component {
 								}else if(self.props.total){
 									let dsd=0;
 									self.props.total.map((item)=>{
-										// console.log(item)
-										dsd += item.pic*item.qty;
-										// console.log(dsd)
-										// dsd += dsd
-										// console.log(dsd)
+										if(item.checksd!==''){
+											dsd += item.pic*item.qty;
+										}
 									})
 									return dsd;
 								}
@@ -60,10 +58,12 @@ class ShoppingCartFoot extends Component {
 						let dsd=0;
 						self.props.total.map((item)=>{
 							// console.log(item)
-							dsd += item.qty*1;
-							// console.log(dsd)
-							// dsd += dsd
-							// console.log(dsd)
+							if(item.checksd!==''){
+								dsd += item.qty*1;
+								// console.log(dsd)
+								// dsd += dsd
+								// console.log(dsd)
+							}
 						})
 						return dsd;
 					}

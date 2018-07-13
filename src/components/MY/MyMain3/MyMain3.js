@@ -2,18 +2,9 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 // import $ from 'jquery';
 
-import './MY.css';
+import './MyMain3.css';
 
-import MyHeader from '../../components/MY/MyHeader/MyHeader'
-import MyMain1 from '../../components/MY/MyMain1/MyMain1'
-import MyMain2 from '../../components/MY/MyMain2/MyMain2'
-import MyMain3 from '../../components/MY/MyMain3/MyMain3'
-import MyMain4 from '../../components/MY/MyMain4/MyMain4'
-import MyMoutol from '../../components/MY/MyMoutol/MyMoutol'
-
-
-
-class MY extends Component {
+class MyMain3 extends Component {
 	constructor(props) {
 		super(props);
 		//类实例化，执行
@@ -37,15 +28,16 @@ class MY extends Component {
 
 	render() {
 		return (
-            // 这里写html结构
-			<div className="MY">
-				{/* <p onClick={this.toggle.bind(this)}>这是首页</p> */}
-				<MyHeader/>
-                <MyMain1/>
-                <MyMain2/>
-				<MyMain3/>
-				<MyMain4/>
-				<MyMoutol/>
+			// 这里写html结构
+			<div className="MyMain3">
+				<ul className="MyMain3_list">
+					<li className="MyMain3_list1"><a><span>0.00</span><span>国美币</span></a></li>
+					<li className="MyMain3_list2"><a><span>4</span><span>优惠券</span></a></li>
+					<li className="MyMain3_list3"><a><span>222</span><span>美豆</span></a></li>
+					<li className="MyMain3_list4"><a><span><img src={require('../../../static/images/meitongka.png')}/></span><span>美通卡</span></a></li>
+					<li className="MyMain3_list5"><a><span><img src={require('../../../static/images/qianbao.png')}/></span><span>我的金融</span></a></li>
+				</ul>
+				<div className="gelixian"></div>
 			</div>
 		);
 	}
@@ -65,4 +57,4 @@ export default connect((state) => {
 			})
 		}
 	}
-})(MY);
+})(MyMain3);

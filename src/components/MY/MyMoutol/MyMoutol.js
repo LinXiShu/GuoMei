@@ -2,18 +2,9 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 // import $ from 'jquery';
 
-import './MY.css';
+import './MyMoutol.css';
 
-import MyHeader from '../../components/MY/MyHeader/MyHeader'
-import MyMain1 from '../../components/MY/MyMain1/MyMain1'
-import MyMain2 from '../../components/MY/MyMain2/MyMain2'
-import MyMain3 from '../../components/MY/MyMain3/MyMain3'
-import MyMain4 from '../../components/MY/MyMain4/MyMain4'
-import MyMoutol from '../../components/MY/MyMoutol/MyMoutol'
-
-
-
-class MY extends Component {
+class MyMoutol extends Component {
 	constructor(props) {
 		super(props);
 		//类实例化，执行
@@ -37,16 +28,17 @@ class MY extends Component {
 
 	render() {
 		return (
-            // 这里写html结构
-			<div className="MY">
-				{/* <p onClick={this.toggle.bind(this)}>这是首页</p> */}
-				<MyHeader/>
-                <MyMain1/>
-                <MyMain2/>
-				<MyMain3/>
-				<MyMain4/>
-				<MyMoutol/>
-			</div>
+			// 这里写html结构
+            <div className="MyMoutol">
+                <div className="MyMoutol_Heared">
+                    <h4 className="MyMoutol_Top"><i></i><span>为你推荐</span></h4>
+                </div>
+                <ul className="MyMoutol_Centent">
+                    {((self)=>{
+                        
+                    })(this)}
+                </ul>
+            </div>
 		);
 	}
 }
@@ -65,4 +57,4 @@ export default connect((state) => {
 			})
 		}
 	}
-})(MY);
+})(MyMoutol);

@@ -28,14 +28,17 @@ class MyMain2 extends Component {
 
 	render() {
 		return (
-            // 这里写html结构
-			<ul className="MyMain2">
-				<li><a><i></i><span></span></a></li>
-				<li><a><i></i><span></span></a></li>
-                <li><a><i></i><span></span></a></li>
-                <li><a><i></i><span></span></a></li>
-                <li><a><i></i><span></span></a></li>
-			</ul>
+			// 这里写html结构
+			<div className="MyMain2">
+				<ul className="MyMain2_list">
+					<li className="MyMain2_list1"><a><span><img src={require('../../../static/images/daifukuai.png')}/></span><span>待付款</span></a></li>
+					<li className="MyMain2_list2"><a><span><img src={require('../../../static/images/daishouhuo.png')}/></span><span>待收货</span></a></li>
+					<li className="MyMain2_list3"><a><span><img src={require('../../../static/images/daipingjia.png')}/></span><span>待评价</span></a></li>
+					<li className="MyMain2_list4"><a><span><img src={require('../../../static/images/tuihou.png')}/></span><span>退款/售后</span></a></li>
+					<li className="MyMain2_list5"><a><span><img src={require('../../../static/images/dingdan.png')}/></span><span>全部订单</span></a></li>
+				</ul>
+				<div className="gelixian"></div>
+			</div>
 		);
 	}
 }

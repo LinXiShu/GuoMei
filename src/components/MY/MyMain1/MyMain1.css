@@ -15,6 +15,7 @@
     height: 0.78125rem;
     vertical-align: bottom;
     background: url('../../../static/images/gift.b5b6719101.gif') no-repeat center bottom;
+    background-size: 100%;
     margin: 0px 0.25rem;
 }
 
