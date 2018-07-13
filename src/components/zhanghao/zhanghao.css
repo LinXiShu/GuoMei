@@ -1,0 +1,24 @@
+/* 
+* @Author: Marte
+* @Date:   2018-07-12 15:46:04
+* @Last Modified by:   Marte
+* @Last Modified time: 2018-07-12 19:31:41
+*/
+.zhanghao .header i{display: block;font-size: 70px;line-height: 110px;color:#686868;padding-left: 10px;}
+.zhanghao .logo{text-align: center;}
+.zhanghao .logo img{display:inline-block;}
+.zhanghao .main .main-t{height: 82px;overflow: hidden;padding-left: 86px;}
+.zhanghao .main .main-t li{float:left;width: 290px;}
+.zhanghao .main .main-t li a{float:left;font-size: 30px;line-height: 78px;color:#999999;padding-left: 50px;}
+.zhanghao .main .main-t .active{color:#F20C59 !important;border-bottom: 4px solid #F20C59;}
+
+.zhanghao .main .main-c{position: relative;padding-left: 86px;overflow: hidden;}
+.zhanghao .main .main-c input{width: 580px;height: 110px;font-size: 30px;line-height: 110px;color:#BFBFBF;border:0 none;border-bottom: 1px solid #bfbfbf;padding-left: 50px;color:#000;}
+.zhanghao .main .main-c .phone{position: absolute;top:36px;left:84px;}
+.zhanghao .main .main-c .lock{position: absolute;top:146px;left:84px;}
+.zhanghao .main .main-c .eye{position: absolute;top:146px;right:80px;}
+.zhanghao .main .main-c p{font-size: 30px;line-height: 130px;color:#78BEE9;}
+.zhanghao .main .main-c p .fl{float:left;}
+.zhanghao .main .main-c p .fr{float:right;padding-right: 86px;}
+.zhanghao .main .main-b button{width: 580px;height: 90px;background: #FF90C4;border-radius: 40px;border:0 none;font-size: 30px;line-height: 90px;text-align: center;color:#fff;margin-left: 86px;}
+.zhanghao .footer{padding-top: 200px;}

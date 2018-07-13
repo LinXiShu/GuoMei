@@ -1,0 +1,10 @@
+/* 
+* @Author: Marte
+* @Date:   2018-07-10 14:14:14
+* @Last Modified by:   Marte
+* @Last Modified time: 2018-07-10 14:37:42
+*/
+.weui-flex{padding:30px 60px;border-bottom: 1px solid #DDDDDD;}
+.weui-flex .weui-flex__item{text-align: center;border-right: 1px solid #ddd;}
+.weui-flex .xiao{border-right: 0 none;}
+.weui-flex .weui-flex__item a span{font-size: 26px;line-height: 26px;color:#888888;}

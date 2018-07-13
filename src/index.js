@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import './index.css';
-// import App from './App';
+// weui
+import 'weui';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
@@ -9,6 +9,13 @@ import './static/css/base.css';
 import registerServiceWorker from './registerServiceWorker';
 
 import Xhome from './pages/home/home';
+import Youxuan from './pages/youxuan/youxuan';
+import Zhanghao from './components/zhanghao/zhanghao';
+import Duanxin from './components/duanxin/duanxin';
+import Zhuce from './components/zhuce/zhuce';
+import Xinxi from './pages/xinxi/xinxi';
+
+
 
 const store = createStore((state = {
     // 状态名：状态值
@@ -34,8 +41,14 @@ ReactDOM.render(
             <div>
                 {/* <Xhome /> */}
                 <Route exact path="/" component={Xhome}/>
+                <Route path="/youxuan" component={Youxuan}/>
+                <Route path="/zhanghao" component={Zhanghao}/>
+                <Route path="/duanxin" component={Duanxin}/>
+                <Route path="/zhuce" component={Zhuce}/>
+                <Route path="/xinxi" component={Xinxi}/>
+
             </div>
         </Provider>
-        </Router>, 
+    </Router>, 
 document.getElementById('root'));
 registerServiceWorker();

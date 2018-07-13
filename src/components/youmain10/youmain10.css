@@ -1,0 +1,22 @@
+/* 
+* @Author: Marte
+* @Date:   2018-07-10 16:48:40
+* @Last Modified by:   Marte
+* @Last Modified time: 2018-07-12 09:56:29
+*/
+.main10{width: 100%;box-sizing: border-box;padding:0 20px;background: #8241F5;overflow: hidden;}
+.main10 .goods{width: 350px;height: 555px;background:#fff;margin-top: 12px;margin-right: 10px;float:left;}
+.main10 .goods:nth-child(2n){margin-right: 0;}
+
+.goods1 img{width: 350px;height: 312px;}
+.goods1 .zhe{display: block;width: 350px;height: 36px;background-color: #666666;}
+.goods2{box-sizing: border-box;padding:15px 10px;}
+.goods2 span:nth-child(1){font-size: 26px;line-height: 32px;color:#fff;background: #F30E5E;border-radius: 4px;}
+.goods2 span:nth-child(2){font-size: 26px;line-height: 32px;color:#333333;}
+
+.goods3 p{font-size: 20px;line-height: 20px;color:#A2A4A6;padding-left: 10px;}
+
+.goods4{position: relative;}
+.goods4 span:nth-child(1){font-size: 26px;line-height: 60px;color:#F20C59;font-weight: bold;padding-left: 10px;}
+.goods4 span:nth-child(1)::before{content:"￥";}
+.goods4 span:nth-child(2){position: absolute;top:0;right:20px;font-size: 40px;line-height: 60px;border:2px solid #DCDDDE;border-radius: 50%;display:block;width: 70px;height: 70px;color:#F20C59;font-weight: bold;text-align: center;}

@@ -1,0 +1,28 @@
+/* 
+* @Author: Marte
+* @Date:   2018-07-13 09:07:13
+* @Last Modified by:   Marte
+* @Last Modified time: 2018-07-13 10:29:06
+*/
+.xinxi{width: 100%;height: 100%;background: #F1F1F1;}
+.xinxi .header{border-bottom:2px solid #DCDCDC;position: relative;text-align: center;background: #fff;}
+.xinxi .header i{position:absolute;font-size: 60px;line-height: 110px;color:#686868;left: 10px;top:0px;}
+.xinxi .header span{font-size: 36px;line-height: 96px;color:#333333;}
+
+.xinxi .main{background: #fff;overflow: hidden;box-sizing: border-box;padding:0 0 0 36px;}
+.xinxi .main ul li{width: 100%;height: 96px;font-size: 30px;line-height: 96px;border-bottom: 2px solid #dcdcdc;color:#323232;padding-right: 70px;overflow: hidden;position: relative;}
+.xinxi .main ul li span:nth-child(1){float:left;}
+.xinxi .main ul li span:nth-child(2){float:right;color:#989898;}
+.xinxi .main ul .touxiang span img{display: inline-block;padding-top: 20px;}
+.xinxi .main ul li i{display: block;position: absolute;top:0;right:40px;font-size: 30px;line-height: 96px;color:#989898;}
+
+
+.xinxi .ulxia .lixia{width: 100%;height: 96px;font-size: 30px;line-height: 96px;border-bottom: 2px solid #dcdcdc;color:#323232;padding-right: 70px;overflow: hidden;position: relative;padding-left: 36px;margin-top: 25px;background: #fff;}
+.xinxi .ulxia .lixia span:nth-child(1){float:left;}
+.xinxi .ulxia .lixia span:nth-child(2){float:right;color:#989898;}
+.xinxi .ulxia .lixia i{display: block;position: absolute;top:0;right:40px;font-size: 30px;line-height: 96px;color:#989898;}
+
+.xinxi .footer ul{margin-top: 25px;background: #fff;border-bottom: 2px solid #dcdcdc;overflow: hidden;padding-left: 80px;}
+.xinxi .footer ul li{float:left;font-size: 30px;line-height: 96px;}
+.xinxi .footer ul li span{padding:0 35px;border-right: 2px solid #dcdcdc;}
+.xinxi .footer ul li:nth-child(1){float:left;font-size: 30px;line-height: 96px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width: 130px;}

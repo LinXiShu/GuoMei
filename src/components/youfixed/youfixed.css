@@ -1,0 +1,15 @@
+/* 
+* @Author: Marte
+* @Date:   2018-07-10 15:06:06
+* @Last Modified by:   Marte
+* @Last Modified time: 2018-07-10 22:34:22
+*/
+.diBu1{position:fixed;left:0;bottom:0;display: flex;flex-direction: row;justify-content: flex-start;z-index: 100;}
+.diBu1 li{flex:1;opacity: 0.8;}
+.diBu1 li img{height: 86px;width: 250px;}
+.diBu2{position:fixed;right:24px;bottom:40px;height: 220px;width: 90px;z-index: 90;}
+.diBu2 li{float:left;width: 90px;height: 90px;border:1px solid #ddd;border-radius: 50%;text-align: center;margin:10px 0; background: #fff;}
+.diBu2 li i{display:block;font-size: 40px;color:#444444;}
+.diBu2 li:nth-child(1) i{line-height: 90px;}
+.diBu2 li:nth-child(2) i{line-height: 48px;}
+.diBu2 li span{display:block;font-size: 20px;line-height: 20px;}

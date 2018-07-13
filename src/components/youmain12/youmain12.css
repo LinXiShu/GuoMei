@@ -1,0 +1,14 @@
+/* 
+* @Author: Marte
+* @Date:   2018-07-10 16:48:41
+* @Last Modified by:   Marte
+* @Last Modified time: 2018-07-12 11:56:52
+*/
+.main12{width: 100%;box-sizing: border-box;padding:0 20px;background: #8241F5;overflow: hidden;}
+.main12 .goods{width: 230px;height: 390px;background:#fff;margin-top: 6px;margin-right: 10px;float:left;}
+.main12 .goods:nth-child(3n){margin-right: 0;}
+
+.main12 .goods img{display: block;width: 230px;height: 230px;}
+.main12 .goods p{font-size: 24px;line-height: 30px;color:#333333;padding-left: 10px;padding-top: 10px;}
+.main12 .goods span{font-size: 26px;line-height: 70px;color:#F20C59;font-weight: bold;padding-left: 10px;}
+.main12 .goods span::before{content:"￥";}
