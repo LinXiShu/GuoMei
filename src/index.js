@@ -15,11 +15,15 @@ import HelloCar   from './components/HelloCar';
 import HelloMy    from './components/HelloMy';
 import HelloKuxuan from './components/HelloKuxuan';
 import HelloLogin from './components/HelloLogin';
+import Myss from './pages/MY/MY';
+import carss from './pages/ShoppingCart/ShoppingCart';
 
 
 import Classify from './components/classfy';
 import Goodslist from './components/goodslist';
 import Details from './components/details';
+
+import Youxuan from './pages/youxuan/youxuan';
 
 const store = createStore((state = {
     // 状态名：状态值
@@ -41,19 +45,19 @@ const store = createStore((state = {
 
 ReactDOM.render(
     <BrowserRouter history={BrowserRouter.hashHistory}>
-
+      <Provider store={store}>
         <div>
               <Route exact path="/"     component={HelloIndex} />
               <Route       path="/list" component={HelloList} />
-              <Route       path="/car"  component={HelloCar} />
-              <Route       path="/my"   component={HelloMy} />
-              <Route       path="/kuxuan"   component={HelloKuxuan} />
+              <Route       path="/car"  component={carss} />
+              <Route       path="/MY"   component={Myss} />
+              <Route       path="/Youxuan"   component={Youxuan} />
               <Route       path="/login" component={HelloLogin} />
               <Route       path="/classify"  component={Classify} />
               <Route       path="/goodslist"  component={Goodslist} />
               <Route       path="/details"  component={Details} />
         </div>
-        
+        </Provider>
     </BrowserRouter>
         , document.getElementById('root'));
 registerServiceWorker();

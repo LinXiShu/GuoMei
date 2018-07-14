@@ -12,9 +12,9 @@ class Dnbg extends Component{
                         <div className="banner">
                         <a title="电脑办公" href="http://prom.m.gome.com.cn/html/prodhtml/topics/201706/8/saleTfXC21M1OYz.html"><img className="loading-img default-bg-sm" src="http://gfs5.gomein.net.cn/T1lVJbBbZT1RCvBVdK.jpg" /></a>
                         </div> 
-                            <div className="item" data-id="0">
+                            <div className="item " data-id="0">
                                 <h3 className="title" alt="电脑整机">电脑整机</h3>
-                                <ul className="list ">
+                                <ul className="lista ">
                                 
                                 <li>
                                     <a data-id="0">
@@ -101,7 +101,7 @@ class Dnbg extends Component{
                             </div>
                             <div className="item" data-id="1">
                                 <h3 className="title" alt="苹果配件">苹果配件</h3>
-                                <ul className="list ">
+                                <ul className="lista ">
                                 
                                 <li>
                                     <a data-id="0" >

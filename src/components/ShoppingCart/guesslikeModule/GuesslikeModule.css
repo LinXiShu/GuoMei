@@ -1,0 +1,28 @@
+.title_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 1.15625rem;
+    padding: 0 3.125rem;
+}
+
+.title_box h2{
+    text-align: center;
+    font-size: 24px;
+    color: #F20C59;
+}
+
+.title_box h2 i{
+    display: inline-block;
+    vertical-align: middle;
+    width: 0.5625rem;
+    height: 0.5625rem;
+    margin-right: 0.125rem;
+    background: url('../../../static/images/icon_tuijian.png') no-repeat center center;
+}
+
+.title_box p{
+    width: 0.6875rem;
+    height: 0.03125rem; 
+    background: -webkit-linear-gradient(left,#FF0027,#D900B4,#F0F);
+}

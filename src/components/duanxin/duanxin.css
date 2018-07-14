@@ -1,0 +1,26 @@
+/* 
+* @Author: Marte
+* @Date:   2018-07-12 15:46:04
+* @Last Modified by:   Marte
+* @Last Modified time: 2018-07-12 20:00:26
+*/
+.duanxin .header{border:0 none;}
+.duanxin .header i{display: block;font-size: 70px;line-height: 110px;color:#686868;padding-left: 10px;}
+.duanxin .logo{text-align: center;}
+.duanxin .logo img{display:inline-block;}
+.duanxin .main .main-t{height: 82px;overflow: hidden;padding-left: 86px;}
+.duanxin .main .main-t li{float:left;width: 290px;}
+.duanxin .main .main-t li a{float:left;font-size: 30px;line-height: 78px;color:#999999;padding-left: 50px;}
+.duanxin .main .main-t .active{color:#F20C59 !important;border-bottom: 4px solid #F20C59;}
+
+.duanxin .main .main-c{position: relative;padding-left: 86px;overflow: hidden;}
+.duanxin .main .main-c input{width: 580px;height: 110px;font-size: 30px;line-height: 110px;color:#BFBFBF;border:0 none;border-bottom: 1px solid #bfbfbf;padding-left: 50px;color:#000;}
+.duanxin .main .main-c .phone{position: absolute;top:36px;left:84px;}
+.duanxin .main .main-c .lock{position: absolute;top:146px;left:84px;}
+.duanxin .main .main-c .eye{position: absolute;top:146px;right:80px;}
+.duanxin .main .main-c span{position:absolute;width: 200px;height: 60px;border:2px solid #F43877;font-size: 26px;line-height: 60px;text-align: center;color:#F43877;top:135px;right:82px;border-radius: 30px;}
+.duanxin .main .main-b button{width: 580px;height: 90px;background: #FF90C4;border-radius: 40px;border:0 none;font-size: 30px;line-height: 90px;text-align: center;color:#fff;margin-left: 86px;margin-top: 60px;}
+.duanxin .main .main-b .p1{font-size: 24px;line-height: 32px;color:#999999;padding-top:30px;padding-left: 86px;padding-right: 86px;}
+.duanxin .main .main-b .p2{font-size: 24px;line-height: 32px;color:#A9D5F1;padding-top:30px;padding-left: 86px;padding-right: 86px;}
+
+.duanxin .footer{padding-top: 100px;}

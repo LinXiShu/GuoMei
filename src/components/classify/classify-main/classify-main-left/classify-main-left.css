@@ -1,7 +1,7 @@
 a{text-decoration:none;}
 
 .category-nav{
-    width:1.885rem;
+    width:2.085rem;
     height: 100%;
     overflow-y:scroll;
     background-color: #F0F0F0;
@@ -10,7 +10,7 @@ a{text-decoration:none;}
     position:fixed;
     
     left:0;
-}
+} 
 
 .category-nav li {
     

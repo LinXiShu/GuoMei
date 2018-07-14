@@ -1,11 +1,16 @@
 
+
+
 ul,li{
 
     margin: 0;
     padding: 0;
     list-style: none;
 }
-
+*{
+    padding: 0;
+    margin: 0;
+}
 
 main{
    
@@ -58,6 +63,7 @@ ul,li{
     font-size: 0.359375rem;
     line-height:1.03125rem;
     color:#000;
+
 }
 .Tabs_module .pos_r, 
 .Tabs_module p, 
@@ -294,6 +300,8 @@ ul,li{
     overflow: hidden;
     height: 0.546875rem;
 }
+
+i{ font-style:normal}
 .info_box .tag-wrap .sale-tag {
     float: left;
     box-sizing: border-box;
@@ -306,8 +314,10 @@ ul,li{
     vertical-align: baseline;
     line-height: 1;
 }
-.price_warp {
+.info_box .price_warp {
     overflow: hidden;
+    height: 1rem;
+   line-height: 0.15625rem; 
 }
 .goods_list_list{
     color: black;
@@ -317,8 +327,9 @@ ul,li{
     color: #F20C59;
 }
 .goods_list_list .gd_list .cmt {
+    position: absolute;
     font-size:0.3125rem;
-    line-height: .42rem;
+    line-height:0rem;
     color: #999;
     margin-bottom: .08rem;
     border-bottom: 1px solid #e6e6e6;

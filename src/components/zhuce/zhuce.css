@@ -1,0 +1,23 @@
+/* 
+* @Author: Marte
+* @Date:   2018-07-12 15:46:04
+* @Last Modified by:   Marte
+* @Last Modified time: 2018-07-12 20:35:28
+*/
+.zhuce .header{border:0 none;position: relative;text-align: center;}
+.zhuce .header i{position:absolute;font-size: 60px;line-height: 110px;color:#686868;left: 10px;top:0px;}
+.zhuce .header span{font-size: 36px;line-height: 110px;color:#333333;}
+
+.zhuce .main .main-c{position: relative;padding-left: 86px;overflow: hidden;padding-top: 80px;}
+.zhuce .main .main-c input{width: 580px;height: 110px;font-size: 30px;line-height: 110px;color:#BFBFBF;border:0 none;border-bottom: 1px solid #bfbfbf;padding-left: 50px;color:#000;}
+.zhuce .main .main-c .phone{position: absolute;top:116px;left:84px;}
+.zhuce .main .main-c .lock{position: absolute;top:146px;left:84px;}
+.zhuce .main .main-c .eye{position: absolute;top:146px;right:80px;}
+.zhuce .main .main-c p{width: 580px;height: 100px;background: #EAEBEC;border:1px solid #ddd;border-radius: 15px;margin-top: 50px;font-size: 26px;line-height: 100px;color:#8B8C8E;text-align: center;}
+.zhuce .main .main-c span{position: absolute;bottom:0;left:80px;width: 100px;height: 100px;background: #fff;font-size: 40px;line-height: 100px;text-align: center;border:1px solid #ccc;border-radius: 15px;}
+.zhuce .main .main-b{position: relative;}
+.zhuce .main .main-b button{width: 580px;height: 90px;background: #FF90C4;border-radius: 40px;border:0 none;font-size: 30px;line-height: 90px;text-align: center;color:#fff;margin-left: 86px;margin-top: 60px;}
+.zhuce .main .main-b .p1{font-size: 24px;line-height: 32px;color:#999999;padding-top:30px;padding-left: 126px;padding-right: 86px;}
+.zhuce .main .main-b .p2{font-size: 24px;line-height: 32px;color:#A9D5F1;padding-top:30px;padding-left: 126px;padding-right: 86px;}
+.zhuce .main .main-b img{position: absolute;top:176px;left:86px;}
+.zhuce .footer{padding-top: 100px;}

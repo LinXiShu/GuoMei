@@ -10,7 +10,7 @@ html{
     background: #fafafa;
 }
 
-.header{
+.z_header{
     
     width: 100%;
     height: 1.4rem;
@@ -21,14 +21,14 @@ html{
     z-index: 2;
 }
 
-.header img{
+.z_header img{
     float: left;
    
     margin: 0.3rem 0.3rem 0.28rem 0.28rem;
     width: 0.700rem;
 }
 
-.header .head_ipt{
+.z_header .head_ipt{
     float: left;
     margin-top: 0.26rem;
     margin-left: ;
@@ -38,7 +38,7 @@ html{
     border-radius: 0.15625rem;
     font-size: 0.3rem;
 }
-.header .spansa{
+.z_header .spansa{
     float: right;
     display: block;
     width: 0.6rem;
@@ -48,11 +48,11 @@ html{
     margin-right: 0.3125rem;
     margin-left: 0.35625rem;
 }
-.header .spansa i {
+.z_header .spansa i {
      font-size: 0.625rem;
      line-height: 0.35rem;
 }
-.header  .ssas{
+.z_header  .ssas{
 
     float: right;
     border-radius: 6px;
@@ -65,7 +65,7 @@ html{
     color: #666;
     font-size: 0.46875rem;
 }
-.header .ssas i {
+.z_header .ssas i {
     font-size: 0.625rem;
 
 }

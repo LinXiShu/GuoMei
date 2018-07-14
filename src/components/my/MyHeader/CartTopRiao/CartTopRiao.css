@@ -1,0 +1,56 @@
+.CartTopRiao{
+    /* display: none; */
+    position: absolute;
+    top: 1.59375rem;
+    right: 0.234375rem;
+    width: 5.78125rem;
+    height: 5.890625rem;
+    border-radius: 10px;
+    background-color: #FFF;
+    z-index: 1;
+}
+
+.Riao_icn{
+    position: absolute;
+    top: -0.421875rem;
+    right: 0.25rem;
+    border:0.21875rem solid transparent;
+    border-bottom: 0.21875rem solid #FFF;
+}
+
+.Riao_list{
+    display: flex;
+    line-height: 1.46875rem;
+    color: #000;
+}
+
+.Riao_list i{
+    display: block;
+    width: 1.875rem;
+}
+.Riao_list1 i{
+    background: url('../../../../static/images/Riao_list1.png') no-repeat center center;
+    background-size: 40%;
+}
+
+.Riao_list2 i{
+    background: url('../../../../static/images/Riao_list2.png') no-repeat center center;
+    background-size: 40%;
+
+}
+
+.Riao_list3 i{
+    background: url('../../../../static/images/Riao_list3.png') no-repeat center center;
+    background-size: 40%;
+
+}
+
+.Riao_list4 i{
+    background: url('../../../../static/images/Riao_list4.png') no-repeat center center;
+    background-size: 40%;
+}
+
+.Riao_list p{
+    flex: 1;
+    border-bottom: 0.015625rem solid #CCC;
+}

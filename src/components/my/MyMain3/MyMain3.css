@@ -1,0 +1,36 @@
+.MyMain3_list{
+    display: flex;
+}
+
+.MyMain3_list li{
+    flex: 20%;
+    height: 2.1875rem;
+    padding: 0.46875rem 0;
+}
+
+.MyMain3_list li a,.MyMain3_list li a span{
+    display: block;
+    text-align: center;
+    color: #666;
+    font-size: 22px;
+}
+
+.MyMain3_list li a span:nth-child(1){
+    line-height: 0.828125rem;
+}
+
+.MyMain3_list li a img{
+    width: 0.65625rem;
+    height: 0.65625rem;
+    margin: 0 auto 0.171875rem;
+}
+
+.MyMain3_list1 {
+
+}
+
+.gelixian{
+    width: 100%;
+    height: 0.3125rem;
+    background-color: #F2F2F2;
+}

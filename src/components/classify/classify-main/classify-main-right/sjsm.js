@@ -17,7 +17,7 @@ class Sjsm extends Component{
                 </div> 
                 <div className="item" data-id="0">
                     <h3 className="title" alt="手机通讯">手机通讯</h3>
-                    <ul className="list ">
+                    <ul className="lista ">
                                 
                         <li>
                             <a data-id="0">
@@ -41,7 +41,7 @@ class Sjsm extends Component{
                 </div>
                 <div className="item" data-id="1">
                         <h3 className="title" alt="手机配件">手机配件</h3>
-                        <ul className="list ">
+                        <ul className="lista ">
                                 
                             <li>
                                 <a data-id="0">

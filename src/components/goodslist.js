@@ -8,7 +8,7 @@ class Goodslist extends Component{
     render(){
 
         return(
-            <div className="goodslist">
+            <div className="goodslist" style={{background : '#fff'}}>
  
                 <List_top />
                 <List />
