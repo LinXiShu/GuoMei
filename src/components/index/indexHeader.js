@@ -53,8 +53,8 @@ class IndexHeader extends React.Component{
             <div className="z_header" id="head">
                 <img src="//css.gomein.net.cn/plus/style/index/images/grass_logo.png?v=2017092001"  />
                 <input type="text" className="head_ipt" placeholder="儿童补钙"/>
-                  <span className="spansa"><Link to="/car"><i className="iconfont icon-cart"></i></Link></span>
-                <div className="ssas">{bottom}</div>
+                  
+                <div className="ssas">{bottom}</div><span className="spansa"><Link to="/car"><i className="iconfont icon-cart"></i></Link></span>
               
                 
             </div>

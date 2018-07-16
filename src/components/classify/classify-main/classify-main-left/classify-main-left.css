@@ -11,6 +11,10 @@ a{text-decoration:none;}
     
     left:0;
 } 
+.category-nav .list1{
+
+    border: none;
+}
 
 .category-nav li {
     

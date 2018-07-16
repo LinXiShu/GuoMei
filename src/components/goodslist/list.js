@@ -59,7 +59,7 @@ componentDidMount(){
     new Promise(function(resolve){
 
         $.ajax({
-                    url: 'http://10.3.134.52:1898/products?classa=1',
+                    url: 'http://localhost:1898/products?classa=1',
                     type:'GET',
                     success:function(data){
                         data1=data;
@@ -109,7 +109,7 @@ componentDidMount(){
 
         setTimeout(function(){
                     $.ajax({
-                            url: 'http://10.3.134.52:1898/product',
+                            url: 'http://localhost:1898/product',
                             type:'GET',
                             success:function(data){
                                 data2 = data;

@@ -69,7 +69,7 @@ class Banner extends Component {
         }
 
                 $.ajax({
-                    url: 'http://10.3.134.52:1898/jr_carss',
+                    url: 'http://localhost:1898/jr_carss',
                     type: 'GET',
                     data: {
 
@@ -95,7 +95,7 @@ class Banner extends Component {
                 console.log(cookies,123213);
 
                 $.ajax({
-                    url: 'http://10.3.134.52:1898/jr_car',
+                    url: 'http://localhost:1898/jr_car',
                     type: 'GET',
                     data: {
                         id : thisxa.states,

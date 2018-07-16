@@ -19,7 +19,7 @@ class IndexXiaLa extends React.Component{
     componentDidMount(){
        var html2 = '';
         $.ajax({
-            url: 'http://10.3.134.52:1898/products',
+            url: 'http://localhost:1898/products',
             dataType: 'json',
             data: {
                 classa : 2,

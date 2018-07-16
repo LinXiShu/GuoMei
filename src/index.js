@@ -17,7 +17,7 @@ import HelloKuxuan from './components/HelloKuxuan';
 import HelloLogin from './components/HelloLogin';
 import Myss from './pages/MY/MY';
 import carss from './pages/ShoppingCart/ShoppingCart';
-
+import Mysas from './components/Mys';
 
 import Classify from './components/classfy';
 import Goodslist from './components/goodslist';

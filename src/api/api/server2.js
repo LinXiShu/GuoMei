@@ -31,6 +31,31 @@ app.get("/", (req, res) => {
 
 })
 
+app.get("/logina", (req, res) => {
+
+
+    var params = {
+        username : req.query.username,
+        password : req.query.password,
+    }
+    var querysss = db.query('select * from users where username= "' + params.username +'" and password = ' + params.password , null , function(data){
+
+        res.send(data);
+    })
+})
+
+app.get("/carp", (req, res) => {
+
+    var params = {
+        ip : req.query.ip,
+    }
+ console.log(params.ip);
+    var sql12345 = db.query('select * FROM car where ip="' + params.ip + '"' , null , function(data){
+
+        res.send(data);
+    }) 
+})
+
 app.get("/jr_carss" , (req, res) =>{
 
     var params = {
@@ -43,6 +68,8 @@ app.get("/jr_carss" , (req, res) =>{
     })
 
 })
+
+
 
 app.get("/jr_car" , (req, res) =>{
 

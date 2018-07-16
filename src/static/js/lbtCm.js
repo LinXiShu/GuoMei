@@ -11,6 +11,8 @@ import LazyLoad from 'react-lazy-load';
 
 import LazyLoads from 'react-lazyload';
 
+
+
 let swopeOptions = {
     continuous: true, speed: 400,
     auto: 2000, 
@@ -30,46 +32,40 @@ class Carousel extends React.Component{
     }
     
     componentDidMount(){
-      window.scrollTo(0,0)
-      console.log(window.scrollY );
+
+
     }
     componentWillMount(){
-       
-       
+      var thisxa = this;
+      var datas;
+          $.ajax({
+                url: 'http://localhost:1898/jr_carss',
+                type: 'GET',
+                data: {
 
-        var thisxa = this;
-        var datas;
-            $.ajax({
-                  url: 'http://localhost:1898/jr_carss',
-                  type: 'GET',
-                  async: false,
-                  data: {
+                    id : thisxa.context.router.history.location.state.id,
 
-                      id : thisxa.context.router.history.location.state.id,
+                }, success : function(data){
+                   thisxa.state.imgdata = data[0].photo ;
+                   thisxa.state.img = 1;
+                   console.log(thisxa.state.imgdata);
+                   console.log(data[0].photo);
 
-                  }, success : function(data){
-                    console.log(thisxa.context.router.history.location.state.id);
-                     thisxa.state.imgdata = data[0].photo ;
-                     thisxa.state.img = 1;
-                     console.log(thisxa.state.imgdata,123);
-                     console.log(data[0].photo);
-
-                  }
-            })
+                }
+          })
     }
 
     render() {
         let bottom = '';
         let thisss = this;
           console.log(thisss);
-
+          
           if(thisss.state.img == 0){
             bottom = <ReactSwipe className="lunbotu1" swipeOptions={swopeOptions} >
                           <div><img src={thisss.state.imgdata} width="100%"  className="lbt lb1" /></div>
                           <div><img src={thisss.state.imgdata} width="100%"  className="lbt lb2" /></div>
                           <div><img src={thisss.state.imgdata} width="100%"  className="lbt lb3" /></div>
                     </ReactSwipe>
-
           }else{
             bottom = <ReactSwipe className="lunbotu1" swipeOptions={swopeOptions} >
                           <div><img src={thisss.state.imgdata} width="100%"  className="lbt lb1" /></div>

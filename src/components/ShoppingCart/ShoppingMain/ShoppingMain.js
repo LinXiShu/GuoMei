@@ -14,6 +14,52 @@ class ShoppingMain extends Component {
 			bool:false
 		}
     }
+
+    componentDidMount(){
+
+    	var html1 ='' ;
+    	var cook = document.cookie ;
+
+    	
+		if(cook == ''){
+			console.log('先登录');
+		}else{
+	    	$.ajax({
+    	    url: 'http://localhost:1898/carp',
+    	    dataType: 'json',
+    	    data: {
+    	        ip :  cook ,
+    	    },
+    	    success: function(res){
+				
+				console.log(res);
+				if(res == ''){
+					console.log('购物车是空的');
+				}else{
+	    	    	$.each(res, function(index, val){
+	    	    		html1 += html2(val)
+	    	    	});
+					$('.ShoppingMain').html('');
+	    	    	$('.ShoppingMain').html(html1);
+				}
+
+    	    }
+
+    	});
+}
+
+
+    	function html2(val){
+    		return `<div style="position: relative;font-size: 0.3rem;width: 100%;height:4rem;background: #fff;margin-top: 0.3rem;border-bottom: 1px solid #ccc;">
+    		<div><img src="${val.photo}" style="width:3rem; height: 3rem;padding: 0.3rem;float: left;"/></div>
+    		<div style="padding-Top: 0.5rem;padding-right: 0.5rem;">${val.name}</div>
+    		<div style="position: absolute;bottom: 1.0rem;left:3.5rem;color: #F20C59;font-size: 0.4rem;">￥${val.price}.00</div>
+    		<div class="" style="position: absolute; top: 2.6rem;right: 0.7rem;">取消订单</div>
+    		</div>`
+    	}
+
+    }
+
 	// 加载时更新购物车
 	componentWillMount(){
 		// console.log(this.state.buycar)

@@ -155,7 +155,7 @@ class Sjsm extends Component{
                 </div>
                     <div className="item" data-id="2">
                         <h3 className="title" alt="摄影摄像">摄影摄像</h3>
-                        <ul className="list ">
+                        <ul className="lista ">
        
                             <li>
                                 <a data-id="0" >
@@ -206,7 +206,7 @@ class Sjsm extends Component{
                             </div>
                             <div className="item" data-id="3">
                                 <h3 className="title" alt="摄照配件">摄照配件</h3>
-                                <ul className="list ">
+                                <ul className="lista ">
                                 
                                 <li>
                                     <a data-id="0" >
@@ -284,7 +284,7 @@ class Sjsm extends Component{
                             </div>
                             <div className="item" data-id="4">
                                 <h3 className="title" alt="智能设备">智能设备</h3>
-                                <ul className="list ">
+                                <ul className="lista ">
                                 
                                 <li>
                                     <a data-id="0">
@@ -353,7 +353,7 @@ class Sjsm extends Component{
                             </div>
                             <div className="item" data-id="5">
                                 <h3 className="title" alt="电子教育">电子教育</h3>
-                                <ul className="list ">
+                                <ul className="lista ">
                                 
                                 <li>
                                     <a data-id="0" >
@@ -404,7 +404,7 @@ class Sjsm extends Component{
                             </div>
                             <div className="item" data-id="6">
                                 <h3 className="title" alt="视听娱乐">视听娱乐</h3>
-                                <ul className="list ">
+                                <ul className="lista ">
                                 
                                 <li>
                                     <a data-id="0" >

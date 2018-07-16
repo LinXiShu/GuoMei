@@ -5,6 +5,8 @@ import { connect } from 'react-redux';
 import CartTopRiao from './CartTopRiao/CartTopRiao';
 import {Router, Route, hashHistory, Link, IndexRoute, browserHistory} from 'react-router-dom';
 
+import $ from 'jquery';
+
 import './ShoppingCartTop.css';
 
 
@@ -29,6 +31,18 @@ class ShoppingCartTop extends Component {
 			}
 		})
     };*/
+
+    componentDidMount(){
+    	var cook = document.cookie;
+
+    	if(cook == ''){
+    		console.log('先登录');
+    	}else{
+    		console.log(cook ,'你好');
+    		$('.Top_prompt').html('');
+    	}
+
+    }
 	
 	sffs(){
 		this.TopSeHide();

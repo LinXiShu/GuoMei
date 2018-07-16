@@ -24,7 +24,7 @@ class Signin extends React.Component{
              $(".sig").click(() => {
                $.ajax({
                    type  : "post",
-                   url   : "http://10.3.134.52:1898/signins",
+                   url   : "http://localhost:1898/signins",
                    async : true,
                    data: {
 
@@ -75,10 +75,13 @@ class Signin extends React.Component{
     }
 
     render(){
-      $('.login').on('click', function(){
-
-          $('.danmu')[0].style.display = 'none';
-      })
+ 
+       $('.login').on('click', function(){
+           if($('.danmu')[0] != undefined){
+               $('.danmu')[0].style.display = 'none';
+           }
+           
+       })
 
         return (  <div className="login_input">
                         <center>

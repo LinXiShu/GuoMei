@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import ReactDOM from 'react-dom';
-// import $ from 'jquery';
+import $ from 'jquery';
+import PropTypes from 'prop-types';
 
 import './MY.css';
 
@@ -12,7 +13,9 @@ import MyMain3 from '../../components/my/MyMain3/MyMain3'
 import MyMain4 from '../../components/my/MyMain4/MyMain4'
 import MyMoutol from '../../components/my/MyMoutol/MyMoutol'
 
-
+let style = {
+    width:'100%' ,height:'1.5rem' ,background:'red', color: '#fff',textAlign: 'center', lineHeight: '1.5rem', fontSize: '0.6rem'
+}
 
 class MY extends Component {
 	constructor(props) {
@@ -35,6 +38,25 @@ class MY extends Component {
 		})
     };*/
     
+    componentDidMount(){
+
+        let thiss = this;
+
+        let cook = document.cookie;
+
+        $('.TC').on('click', function(e){
+
+                var d = new Date();
+                d.setDate(-1000);
+                document.cookie = cook + ';expires='+d.toUTCString() + ';path=/';
+
+                setTimeout(function(){
+                    console.log(thiss);
+                    thiss.props.history.push('/')
+                }, 300)
+
+        })
+    }
 
 	render() {
 		return (
@@ -46,6 +68,7 @@ class MY extends Component {
                 <MyMain2/>
 				<MyMain3/>
 				<MyMain4/>
+                <div style={style} className="TC">退出登录</div>
 				<MyMoutol/>
 			</div>
 		);
