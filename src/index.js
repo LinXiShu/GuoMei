@@ -34,7 +34,7 @@ const store = createStore((state = {
             total:action.fdfh,
         });
 		default:
-			return state
+			return state;
 	}
 });
 
@@ -47,6 +47,6 @@ ReactDOM.render(
                 <Route path="/MY" component={MY}/>
             </div>
         </Provider>
-        </Router>, 
+    </Router>, 
 document.getElementById('root'));
 registerServiceWorker();
